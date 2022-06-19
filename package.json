@@ -1,0 +1,14 @@
+{
+  "name": "nltk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "jshint": "^2.13.4",
+    "node-nlp": "^4.24.0"
+  }
+}

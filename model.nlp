@@ -1,0 +1,4411 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "autoSave": false,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hello": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "is,up,what": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "are,do,how,you": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "salut": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "hi,there": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "go,here,we": {
+            "intent": "greet",
+            "domain": "default"
+          },
+          "good,luck": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "see,you": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "bye,now": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "a,day,good,have": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "see,soon,you": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "all,for,is,now,that": {
+            "intent": "bye",
+            "domain": "default"
+          },
+          "%food%,i,like": {
+            "intent": "story.food",
+            "domain": "default"
+          },
+          "%food%,a,eat,i": {
+            "intent": "story.food",
+            "domain": "default"
+          },
+          "%food%,a": {
+            "intent": "story.food",
+            "domain": "default"
+          },
+          "%food%,a,about,tell": {
+            "intent": "story.food",
+            "domain": "default"
+          },
+          "%food%,a,stori": {
+            "intent": "story.food",
+            "domain": "default"
+          },
+          "%animal%,i,like": {
+            "intent": "story.animal",
+            "domain": "default"
+          },
+          "%animal%,a": {
+            "intent": "story.animal",
+            "domain": "default"
+          },
+          "%animal%,%characteristic%,a,is": {
+            "intent": "story.animal",
+            "domain": "default"
+          },
+          "%animal%,a,about,stori": {
+            "intent": "story.animal",
+            "domain": "default"
+          },
+          "%person%,a,about,stori": {
+            "intent": "story.person",
+            "domain": "default"
+          },
+          "%person%,a": {
+            "intent": "story.person",
+            "domain": "default"
+          },
+          "%characteristic%,%person%,a,is": {
+            "intent": "story.person",
+            "domain": "default"
+          },
+          "%person%,a,about,someth,tell": {
+            "intent": "story.person",
+            "domain": "default"
+          },
+          "%person%,a,do,know,you": {
+            "intent": "story.person",
+            "domain": "default"
+          },
+          "%item%,a,do,use,you": {
+            "intent": "story.item",
+            "domain": "default"
+          },
+          "%item%,a,about,me,tell": {
+            "intent": "story.item",
+            "domain": "default"
+          },
+          "%item%,a": {
+            "intent": "story.item",
+            "domain": "default"
+          },
+          "%item%,a,do,know,you": {
+            "intent": "story.item",
+            "domain": "default"
+          },
+          "do,think,what,you": {
+            "intent": "opinion",
+            "domain": "default"
+          },
+          "opinion,your": {
+            "intent": "opinion",
+            "domain": "default"
+          },
+          "attitud,your": {
+            "intent": "opinion",
+            "domain": "default"
+          },
+          "about,it,me,tell": {
+            "intent": "opinion",
+            "domain": "default"
+          },
+          "do,i,know,not": {
+            "intent": "advice",
+            "domain": "default"
+          },
+          "do,to,what": {
+            "intent": "advice",
+            "domain": "default"
+          },
+          "do,how,to": {
+            "intent": "advice",
+            "domain": "default"
+          },
+          "help,me": {
+            "intent": "advice",
+            "domain": "default"
+          },
+          "advic,an,give,me": {
+            "intent": "advice",
+            "domain": "default"
+          },
+          "me,more,tell": {
+            "intent": "detail",
+            "domain": "default"
+          },
+          "is,next,what": {
+            "intent": "detail",
+            "domain": "default"
+          },
+          "is,then,what": {
+            "intent": "detail",
+            "domain": "default"
+          },
+          "detail": {
+            "intent": "detail",
+            "domain": "default"
+          },
+          "i,more,need": {
+            "intent": "detail",
+            "domain": "default"
+          },
+          "is,name,what,your": {
+            "intent": "info",
+            "domain": "default"
+          },
+          "call,could,i,what,you": {
+            "intent": "info",
+            "domain": "default"
+          },
+          "call,can,i,what,you": {
+            "intent": "info",
+            "domain": "default"
+          },
+          "call,do,friend,what,you,your": {
+            "intent": "info",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "info",
+            "domain": "default"
+          },
+          "me,name,tell,your": {
+            "intent": "info",
+            "domain": "default"
+          },
+          "ok,thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "ok,thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "ok": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "help,is,that": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "am,do,i,say,understand,what,you": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "do,me,understand,you": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "am,do,i,know,say,what,you": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "do,get,me,you": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "comprendo": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "i,know,mean,what": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "a,me,stori,tell": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "a,stori": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "am,bore,i": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "ani,got": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "hear,i,someth,to,want": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "me,someth,tell": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "anyth": {
+            "intent": "story",
+            "domain": "default"
+          },
+          "a,joke,me,tell": {
+            "intent": "joke",
+            "domain": "default"
+          },
+          "ani,do,joke,know,you": {
+            "intent": "joke",
+            "domain": "default"
+          },
+          "a,about,how,joke": {
+            "intent": "joke",
+            "domain": "default"
+          },
+          "a,give,joke,me": {
+            "intent": "joke",
+            "domain": "default"
+          },
+          "laugh,make,me": {
+            "intent": "joke",
+            "domain": "default"
+          },
+          "cheer,i,need,up": {
+            "intent": "joke",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greet": "default",
+          "bye": "default",
+          "story.food": "default",
+          "story.animal": "default",
+          "story.person": "default",
+          "story.item": "default",
+          "opinion": "default",
+          "advice": "default",
+          "detail": "default",
+          "info": "default",
+          "thanks": "default",
+          "understand": "default",
+          "story": "default",
+          "joke": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you doing",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "salut",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi there",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "here we go",
+            "intent": "greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "good luck",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye now",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "have a good day",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you soon",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "that's all for now",
+            "intent": "bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i like %food%",
+            "intent": "story.food"
+          },
+          {
+            "domain": "default",
+            "utterance": "i eat a %food%",
+            "intent": "story.food"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %food%",
+            "intent": "story.food"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell about a %food%",
+            "intent": "story.food"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %food% story",
+            "intent": "story.food"
+          },
+          {
+            "domain": "default",
+            "utterance": "i like %animal%",
+            "intent": "story.animal"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %animal%",
+            "intent": "story.animal"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %animal% is %characteristic%",
+            "intent": "story.animal"
+          },
+          {
+            "domain": "default",
+            "utterance": "story about a %animal%",
+            "intent": "story.animal"
+          },
+          {
+            "domain": "default",
+            "utterance": "story about a %person%",
+            "intent": "story.person"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %person%",
+            "intent": "story.person"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %person% is %characteristic%",
+            "intent": "story.person"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell something about a %person%",
+            "intent": "story.person"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you know a %person%",
+            "intent": "story.person"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you use a %item%",
+            "intent": "story.item"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about a %item%",
+            "intent": "story.item"
+          },
+          {
+            "domain": "default",
+            "utterance": "a %item%",
+            "intent": "story.item"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you know a %item%",
+            "intent": "story.item"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do you think",
+            "intent": "opinion"
+          },
+          {
+            "domain": "default",
+            "utterance": "your opinion",
+            "intent": "opinion"
+          },
+          {
+            "domain": "default",
+            "utterance": "your attitude",
+            "intent": "opinion"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about it",
+            "intent": "opinion"
+          },
+          {
+            "domain": "default",
+            "utterance": "i don't know",
+            "intent": "advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "what to do",
+            "intent": "advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "how to do",
+            "intent": "advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "help me",
+            "intent": "advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me an advice",
+            "intent": "advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me more",
+            "intent": "detail"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is next",
+            "intent": "detail"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is then",
+            "intent": "detail"
+          },
+          {
+            "domain": "default",
+            "utterance": "details",
+            "intent": "detail"
+          },
+          {
+            "domain": "default",
+            "utterance": "i need more",
+            "intent": "detail"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your name",
+            "intent": "info"
+          },
+          {
+            "domain": "default",
+            "utterance": "what could I call you",
+            "intent": "info"
+          },
+          {
+            "domain": "default",
+            "utterance": "what can I call you",
+            "intent": "info"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do your friends call you",
+            "intent": "info"
+          },
+          {
+            "domain": "default",
+            "utterance": "who are you",
+            "intent": "info"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me your name",
+            "intent": "info"
+          },
+          {
+            "domain": "default",
+            "utterance": "ok thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "ok thanks",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "ok",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "that's helpful",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you understand what I am saying",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you understand me",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you know what I am saying",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you get me",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "comprendo",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "know what I mean",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me a story",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "a story",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "i am bored",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "got any",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "i want to hear something",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me something",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "anything",
+            "intent": "story"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me a joke",
+            "intent": "joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "do you know any jokes",
+            "intent": "joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "how about a joke",
+            "intent": "joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me a joke",
+            "intent": "joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "make me laugh",
+            "intent": "joke"
+          },
+          {
+            "domain": "default",
+            "utterance": "i need cheering up",
+            "intent": "joke"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hello": 1,
+              "hi": 1,
+              "what": 1,
+              "is": 1,
+              "up": 1,
+              "how": 1,
+              "are": 1,
+              "you": 1,
+              "do": 1,
+              "salut": 1,
+              "good": 1,
+              "morn": 1,
+              "afternoon": 1,
+              "even": 1,
+              "there": 1,
+              "here": 1,
+              "we": 1,
+              "go": 1,
+              "luck": 1,
+              "see": 1,
+              "bye": 1,
+              "now": 1,
+              "have": 1,
+              "a": 1,
+              "day": 1,
+              "soon": 1,
+              "that": 1,
+              "all": 1,
+              "for": 1,
+              "i": 1,
+              "like": 1,
+              "%food%": 1,
+              "eat": 1,
+              "tell": 1,
+              "about": 1,
+              "stori": 1,
+              "%animal%": 1,
+              "%characteristic%": 1,
+              "%person%": 1,
+              "someth": 1,
+              "know": 1,
+              "use": 1,
+              "%item%": 1,
+              "me": 1,
+              "think": 1,
+              "your": 1,
+              "opinion": 1,
+              "attitud": 1,
+              "it": 1,
+              "not": 1,
+              "to": 1,
+              "help": 1,
+              "give": 1,
+              "an": 1,
+              "advic": 1,
+              "more": 1,
+              "next": 1,
+              "then": 1,
+              "detail": 1,
+              "need": 1,
+              "name": 1,
+              "could": 1,
+              "call": 1,
+              "can": 1,
+              "friend": 1,
+              "who": 1,
+              "ok": 1,
+              "thank": 1,
+              "understand": 1,
+              "am": 1,
+              "say": 1,
+              "get": 1,
+              "comprendo": 1,
+              "mean": 1,
+              "bore": 1,
+              "got": 1,
+              "ani": 1,
+              "want": 1,
+              "hear": 1,
+              "anyth": 1,
+              "joke": 1,
+              "make": 1,
+              "laugh": 1,
+              "cheer": 1
+            },
+            "intents": {
+              "greet": 1,
+              "bye": 1,
+              "story.food": 1,
+              "story.animal": 1,
+              "story.person": 1,
+              "story.item": 1,
+              "opinion": 1,
+              "advice": 1,
+              "detail": 1,
+              "info": 1,
+              "thanks": 1,
+              "understand": 1,
+              "story": 1,
+              "joke": 1
+            },
+            "intentFeatures": {
+              "greet": {
+                "hello": 1,
+                "hi": 1,
+                "what": 1,
+                "is": 1,
+                "up": 1,
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "do": 1,
+                "salut": 1,
+                "good": 1,
+                "morn": 1,
+                "afternoon": 1,
+                "even": 1,
+                "there": 1,
+                "here": 1,
+                "we": 1,
+                "go": 1
+              },
+              "bye": {
+                "good": 1,
+                "luck": 1,
+                "see": 1,
+                "you": 1,
+                "bye": 1,
+                "now": 1,
+                "have": 1,
+                "a": 1,
+                "day": 1,
+                "soon": 1,
+                "that": 1,
+                "is": 1,
+                "all": 1,
+                "for": 1
+              },
+              "story.food": {
+                "i": 1,
+                "like": 1,
+                "%food%": 1,
+                "eat": 1,
+                "a": 1,
+                "tell": 1,
+                "about": 1,
+                "stori": 1
+              },
+              "story.animal": {
+                "i": 1,
+                "like": 1,
+                "%animal%": 1,
+                "a": 1,
+                "is": 1,
+                "%characteristic%": 1,
+                "stori": 1,
+                "about": 1
+              },
+              "story.person": {
+                "stori": 1,
+                "about": 1,
+                "a": 1,
+                "%person%": 1,
+                "is": 1,
+                "%characteristic%": 1,
+                "tell": 1,
+                "someth": 1,
+                "do": 1,
+                "you": 1,
+                "know": 1
+              },
+              "story.item": {
+                "do": 1,
+                "you": 1,
+                "use": 1,
+                "a": 1,
+                "%item%": 1,
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "know": 1
+              },
+              "opinion": {
+                "what": 1,
+                "do": 1,
+                "you": 1,
+                "think": 1,
+                "your": 1,
+                "opinion": 1,
+                "attitud": 1,
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "it": 1
+              },
+              "advice": {
+                "i": 1,
+                "do": 1,
+                "not": 1,
+                "know": 1,
+                "what": 1,
+                "to": 1,
+                "how": 1,
+                "help": 1,
+                "me": 1,
+                "give": 1,
+                "an": 1,
+                "advic": 1
+              },
+              "detail": {
+                "tell": 1,
+                "me": 1,
+                "more": 1,
+                "what": 1,
+                "is": 1,
+                "next": 1,
+                "then": 1,
+                "detail": 1,
+                "i": 1,
+                "need": 1
+              },
+              "info": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1,
+                "could": 1,
+                "i": 1,
+                "call": 1,
+                "you": 1,
+                "can": 1,
+                "do": 1,
+                "friend": 1,
+                "who": 1,
+                "are": 1,
+                "tell": 1,
+                "me": 1
+              },
+              "thanks": {
+                "ok": 1,
+                "thank": 1,
+                "you": 1,
+                "that": 1,
+                "is": 1,
+                "help": 1
+              },
+              "understand": {
+                "do": 1,
+                "you": 1,
+                "understand": 1,
+                "what": 1,
+                "i": 1,
+                "am": 1,
+                "say": 1,
+                "me": 1,
+                "know": 1,
+                "get": 1,
+                "comprendo": 1,
+                "mean": 1
+              },
+              "story": {
+                "tell": 1,
+                "me": 1,
+                "a": 1,
+                "stori": 1,
+                "i": 1,
+                "am": 1,
+                "bore": 1,
+                "got": 1,
+                "ani": 1,
+                "want": 1,
+                "to": 1,
+                "hear": 1,
+                "someth": 1,
+                "anyth": 1
+              },
+              "joke": {
+                "tell": 1,
+                "me": 1,
+                "a": 1,
+                "joke": 1,
+                "do": 1,
+                "you": 1,
+                "know": 1,
+                "ani": 1,
+                "how": 1,
+                "about": 1,
+                "give": 1,
+                "make": 1,
+                "laugh": 1,
+                "i": 1,
+                "need": 1,
+                "cheer": 1,
+                "up": 1
+              }
+            },
+            "featuresToIntent": {
+              "hello": [
+                "greet"
+              ],
+              "hi": [
+                "greet"
+              ],
+              "what": [
+                "greet",
+                "opinion",
+                "advice",
+                "detail",
+                "info",
+                "understand"
+              ],
+              "is": [
+                "greet",
+                "bye",
+                "story.animal",
+                "story.person",
+                "detail",
+                "info",
+                "thanks"
+              ],
+              "up": [
+                "greet",
+                "joke"
+              ],
+              "how": [
+                "greet",
+                "advice",
+                "joke"
+              ],
+              "are": [
+                "greet",
+                "info"
+              ],
+              "you": [
+                "greet",
+                "bye",
+                "story.person",
+                "story.item",
+                "opinion",
+                "info",
+                "thanks",
+                "understand",
+                "joke"
+              ],
+              "do": [
+                "greet",
+                "story.person",
+                "story.item",
+                "opinion",
+                "advice",
+                "info",
+                "understand",
+                "joke"
+              ],
+              "salut": [
+                "greet"
+              ],
+              "good": [
+                "greet",
+                "bye"
+              ],
+              "morn": [
+                "greet"
+              ],
+              "afternoon": [
+                "greet"
+              ],
+              "even": [
+                "greet"
+              ],
+              "there": [
+                "greet"
+              ],
+              "here": [
+                "greet"
+              ],
+              "we": [
+                "greet"
+              ],
+              "go": [
+                "greet"
+              ],
+              "luck": [
+                "bye"
+              ],
+              "see": [
+                "bye"
+              ],
+              "bye": [
+                "bye"
+              ],
+              "now": [
+                "bye"
+              ],
+              "have": [
+                "bye"
+              ],
+              "a": [
+                "bye",
+                "story.food",
+                "story.animal",
+                "story.person",
+                "story.item",
+                "story",
+                "joke"
+              ],
+              "day": [
+                "bye"
+              ],
+              "soon": [
+                "bye"
+              ],
+              "that": [
+                "bye",
+                "thanks"
+              ],
+              "all": [
+                "bye"
+              ],
+              "for": [
+                "bye"
+              ],
+              "i": [
+                "story.food",
+                "story.animal",
+                "advice",
+                "detail",
+                "info",
+                "understand",
+                "story",
+                "joke"
+              ],
+              "like": [
+                "story.food",
+                "story.animal"
+              ],
+              "%food%": [
+                "story.food"
+              ],
+              "eat": [
+                "story.food"
+              ],
+              "tell": [
+                "story.food",
+                "story.person",
+                "story.item",
+                "opinion",
+                "detail",
+                "info",
+                "story",
+                "joke"
+              ],
+              "about": [
+                "story.food",
+                "story.animal",
+                "story.person",
+                "story.item",
+                "opinion",
+                "joke"
+              ],
+              "stori": [
+                "story.food",
+                "story.animal",
+                "story.person",
+                "story"
+              ],
+              "%animal%": [
+                "story.animal"
+              ],
+              "%characteristic%": [
+                "story.animal",
+                "story.person"
+              ],
+              "%person%": [
+                "story.person"
+              ],
+              "someth": [
+                "story.person",
+                "story"
+              ],
+              "know": [
+                "story.person",
+                "story.item",
+                "advice",
+                "understand",
+                "joke"
+              ],
+              "use": [
+                "story.item"
+              ],
+              "%item%": [
+                "story.item"
+              ],
+              "me": [
+                "story.item",
+                "opinion",
+                "advice",
+                "detail",
+                "info",
+                "understand",
+                "story",
+                "joke"
+              ],
+              "think": [
+                "opinion"
+              ],
+              "your": [
+                "opinion",
+                "info"
+              ],
+              "opinion": [
+                "opinion"
+              ],
+              "attitud": [
+                "opinion"
+              ],
+              "it": [
+                "opinion"
+              ],
+              "not": [
+                "advice"
+              ],
+              "to": [
+                "advice",
+                "story"
+              ],
+              "help": [
+                "advice",
+                "thanks"
+              ],
+              "give": [
+                "advice",
+                "joke"
+              ],
+              "an": [
+                "advice"
+              ],
+              "advic": [
+                "advice"
+              ],
+              "more": [
+                "detail"
+              ],
+              "next": [
+                "detail"
+              ],
+              "then": [
+                "detail"
+              ],
+              "detail": [
+                "detail"
+              ],
+              "need": [
+                "detail",
+                "joke"
+              ],
+              "name": [
+                "info"
+              ],
+              "could": [
+                "info"
+              ],
+              "call": [
+                "info"
+              ],
+              "can": [
+                "info"
+              ],
+              "friend": [
+                "info"
+              ],
+              "who": [
+                "info"
+              ],
+              "ok": [
+                "thanks"
+              ],
+              "thank": [
+                "thanks"
+              ],
+              "understand": [
+                "understand"
+              ],
+              "am": [
+                "understand",
+                "story"
+              ],
+              "say": [
+                "understand"
+              ],
+              "get": [
+                "understand"
+              ],
+              "comprendo": [
+                "understand"
+              ],
+              "mean": [
+                "understand"
+              ],
+              "bore": [
+                "story"
+              ],
+              "got": [
+                "story"
+              ],
+              "ani": [
+                "story",
+                "joke"
+              ],
+              "want": [
+                "story"
+              ],
+              "hear": [
+                "story"
+              ],
+              "anyth": [
+                "story"
+              ],
+              "joke": [
+                "joke"
+              ],
+              "make": [
+                "joke"
+              ],
+              "laugh": [
+                "joke"
+              ],
+              "cheer": [
+                "joke"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hello",
+                "hi",
+                "what",
+                "is",
+                "up",
+                "how",
+                "are",
+                "you",
+                "do",
+                "salut",
+                "good",
+                "morn",
+                "afternoon",
+                "even",
+                "there",
+                "here",
+                "we",
+                "go",
+                "luck",
+                "see",
+                "bye",
+                "now",
+                "have",
+                "a",
+                "day",
+                "soon",
+                "that",
+                "all",
+                "for",
+                "i",
+                "like",
+                "%food%",
+                "eat",
+                "tell",
+                "about",
+                "stori",
+                "%animal%",
+                "%characteristic%",
+                "%person%",
+                "someth",
+                "know",
+                "use",
+                "%item%",
+                "me",
+                "think",
+                "your",
+                "opinion",
+                "attitud",
+                "it",
+                "not",
+                "to",
+                "help",
+                "give",
+                "an",
+                "advic",
+                "more",
+                "next",
+                "then",
+                "detail",
+                "need",
+                "name",
+                "could",
+                "call",
+                "can",
+                "friend",
+                "who",
+                "ok",
+                "thank",
+                "understand",
+                "am",
+                "say",
+                "get",
+                "comprendo",
+                "mean",
+                "bore",
+                "got",
+                "ani",
+                "want",
+                "hear",
+                "anyth",
+                "joke",
+                "make",
+                "laugh",
+                "cheer"
+              ],
+              "intents": [
+                "greet",
+                "bye",
+                "story.food",
+                "story.animal",
+                "story.person",
+                "story.item",
+                "opinion",
+                "advice",
+                "detail",
+                "info",
+                "thanks",
+                "understand",
+                "story",
+                "joke"
+              ],
+              "perceptrons": [
+                [
+                  11.396007537841797,
+                  11.380131721496582,
+                  -0.1007557213306427,
+                  1.4592413902282715,
+                  10.035856246948242,
+                  5.29831075668335,
+                  6.007966995239258,
+                  -0.7236940860748291,
+                  0.809843122959137,
+                  11.394817352294922,
+                  5.840582370758057,
+                  5.554174900054932,
+                  5.554173946380615,
+                  5.554166793823242,
+                  0.023481396958231926,
+                  3.7984015941619873,
+                  3.7984015941619873,
+                  3.7984015941619873,
+                  -8.730972290039062,
+                  -2.4562344551086426,
+                  -3.1623520851135254,
+                  -1.7844669818878174,
+                  -2.075101375579834,
+                  -5.238919734954834,
+                  -2.075101375579834,
+                  -0.806184709072113,
+                  -2.221949815750122,
+                  -0.7266555428504944,
+                  -0.7266555428504944,
+                  -5.475338935852051,
+                  -0.8608430624008179,
+                  -1.0995337963104248,
+                  -0.10533279180526733,
+                  -0.9157023429870605,
+                  -1.8369992971420288,
+                  -0.20499077439308167,
+                  -0.8446910381317139,
+                  -0.40478718280792236,
+                  -0.5308122038841248,
+                  -0.01619856432080269,
+                  -0.7166091203689575,
+                  -0.13316141068935394,
+                  -0.3592662811279297,
+                  -2.7302935123443604,
+                  -2.8758418560028076,
+                  -3.1480374336242676,
+                  -0.996759295463562,
+                  -0.9376188516616821,
+                  -0.3916119635105133,
+                  -0.4585857093334198,
+                  -8.99726676940918,
+                  -2.1275086402893066,
+                  -0.4773503839969635,
+                  -0.4773503839969635,
+                  -0.4773503839969635,
+                  -0.4379478394985199,
+                  -4.248868942260742,
+                  -4.24884557723999,
+                  -2.9008588790893555,
+                  -3.7857284545898438,
+                  -1.100892186164856,
+                  -0.01607019640505314,
+                  -0.07739390432834625,
+                  -0.003319142386317253,
+                  -0.04145378991961479,
+                  -8.173168182373047,
+                  -2.8899543285369873,
+                  -2.889927864074707,
+                  -0.24623526632785797,
+                  -0.0473233237862587,
+                  0,
+                  -0.24606291949748993,
+                  -2.889857530593872,
+                  0,
+                  -0.0473233237862587,
+                  -1.445075511932373,
+                  -1.445075511932373,
+                  0,
+                  0,
+                  -2.889814853668213,
+                  -1.1124683618545532,
+                  -0.26155027747154236,
+                  -0.26155027747154236,
+                  -3.664879560470581,
+                  2.8902834511925617
+                ],
+                [
+                  -1.2741835117340088,
+                  -1.2739903926849365,
+                  -1.9128869771957397,
+                  0.44681328535079956,
+                  0,
+                  -0.2189188003540039,
+                  -1.9203743934631348,
+                  2.5505356788635254,
+                  -2.26822566986084,
+                  -1.2737932205200195,
+                  2.8598921298980713,
+                  -4.136592864990234,
+                  -4.136518478393555,
+                  -4.13641881942749,
+                  -0.14131568372249603,
+                  -0.4254472255706787,
+                  -0.4254472255706787,
+                  -0.4254472255706787,
+                  10.149452209472656,
+                  10.448197364807129,
+                  12.904168128967285,
+                  0.1838207244873047,
+                  5.120144844055176,
+                  -0.09378749877214432,
+                  5.120144844055176,
+                  0.014595486223697662,
+                  1.9426201581954956,
+                  5.2067365646362305,
+                  5.2067365646362305,
+                  -1.5283371210098267,
+                  -0.5202353596687317,
+                  -1.46323823928833,
+                  -0.1385488659143448,
+                  -0.6446343660354614,
+                  -0.8020139932632446,
+                  -1.1831729412078857,
+                  -1.2392975091934204,
+                  -0.6246979832649231,
+                  -1.2120239734649658,
+                  -0.020595146343111992,
+                  -0.7058135271072388,
+                  -0.4712267220020294,
+                  -1.1847575902938843,
+                  -1.438200831413269,
+                  -0.5029212236404419,
+                  -1.261864423751831,
+                  -0.5589991211891174,
+                  -0.506283164024353,
+                  -0.132262721657753,
+                  -0.0038642720319330692,
+                  -0.1833779215812683,
+                  -3.651780128479004,
+                  -0.2877271771430969,
+                  -0.2877271771430969,
+                  -0.2877271771430969,
+                  -0.34246498346328735,
+                  -0.3200056254863739,
+                  -0.27219462394714355,
+                  -1.2763193845748901,
+                  -0.12625503540039062,
+                  -0.07224532216787338,
+                  -0.23164041340351105,
+                  -0.45885851979255676,
+                  -0.15655145049095154,
+                  -0.012044394388794899,
+                  -1.908804178237915,
+                  -1.4085783958435059,
+                  -3.827716827392578,
+                  -0.12226417660713196,
+                  -0.003104171250015497,
+                  0,
+                  -0.1220470666885376,
+                  -1.2749863862991333,
+                  0,
+                  -0.003104171250015497,
+                  -0.5818182229995728,
+                  -0.6949617266654968,
+                  0,
+                  0,
+                  -1.2746630907058716,
+                  -0.1628711074590683,
+                  -0.06112748384475708,
+                  -0.06112748384475708,
+                  0,
+                  1.2778205908045195
+                ],
+                [
+                  0,
+                  0,
+                  -0.5733597874641418,
+                  -0.6382555365562439,
+                  -0.1973615139722824,
+                  -0.4948771297931671,
+                  0,
+                  -0.8585726022720337,
+                  -0.7755669355392456,
+                  0,
+                  -0.48651671409606934,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.48651671409606934,
+                  0.7190550565719604,
+                  -0.48651671409606934,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.5788030624389648,
+                  1.2599259614944458,
+                  14.186328887939453,
+                  0.5221166610717773,
+                  0.3181016743183136,
+                  -0.3657388389110565,
+                  -0.10534758120775223,
+                  -2.405632257461548,
+                  -0.6382555365562439,
+                  -2.0528764724731445,
+                  -0.6305736899375916,
+                  -0.6738372445106506,
+                  -0.2465904802083969,
+                  -1.5112066268920898,
+                  -1.6281477212905884,
+                  0,
+                  -0.21273890137672424,
+                  -0.0915854200720787,
+                  -0.08209125697612762,
+                  -0.0388648621737957,
+                  -0.24188899993896484,
+                  -0.20737405121326447,
+                  -0.0038268479984253645,
+                  -0.01832953281700611,
+                  -0.001989997923374176,
+                  -0.001989997923374176,
+                  -0.5432339310646057,
+                  0,
+                  0,
+                  -0.10564453899860382,
+                  -0.721958577632904,
+                  -0.00868293922394514,
+                  -0.16003555059432983,
+                  -0.3251449167728424,
+                  -0.11348134279251099,
+                  0,
+                  0,
+                  -0.1191275492310524,
+                  -0.11686944961547852,
+                  -0.012820837087929249,
+                  -0.47307509183883667,
+                  -0.012820837087929249,
+                  0,
+                  -0.07219849526882172,
+                  -0.18244920670986176,
+                  -0.451305627822876,
+                  -0.007132813334465027,
+                  -0.007132813334465027,
+                  -0.20737405121326447,
+                  -0.20737405121326447,
+                  -0.0027387903537601233,
+                  -0.8300648331642151,
+                  0,
+                  0,
+                  -0.1973615139722824,
+                  -0.5726063573395315
+                ],
+                [
+                  -0.021184438839554787,
+                  -0.031218819320201874,
+                  -0.6877992153167725,
+                  -0.4467651844024658,
+                  -0.14196521043777466,
+                  -0.9116349816322327,
+                  0,
+                  -0.6479690074920654,
+                  -0.6691999435424805,
+                  -0.01898857392370701,
+                  -0.4002602696418762,
+                  -0.0023076182696968317,
+                  -0.0015062649035826325,
+                  -0.00102902390062809,
+                  -0.01153071690350771,
+                  -0.012960393913090229,
+                  -0.012960393913090229,
+                  -0.012960393913090229,
+                  -0.000366141990525648,
+                  0,
+                  -0.020923485979437828,
+                  -0.07204888015985489,
+                  -0.39119264483451843,
+                  1.2479928731918335,
+                  -0.39119264483451843,
+                  0,
+                  -0.310805082321167,
+                  -0.06366664916276932,
+                  -0.06366664916276932,
+                  -0.0986444354057312,
+                  1.3481184244155884,
+                  -1.7772141695022583,
+                  -0.33569303154945374,
+                  -0.9755606651306152,
+                  0.9581552147865295,
+                  -0.9568369388580322,
+                  13.327420234680176,
+                  0.4482990801334381,
+                  -2.8688666820526123,
+                  -0.4154609143733978,
+                  -0.3615540862083435,
+                  -0.27970799803733826,
+                  -1.3518390655517578,
+                  -0.8675435185432434,
+                  0,
+                  -0.3260684013366699,
+                  -0.0982242077589035,
+                  -0.08787686377763748,
+                  -0.011121930554509163,
+                  -0.048772115260362625,
+                  -0.13877235352993011,
+                  -0.2769973874092102,
+                  -0.11404211074113846,
+                  -0.024086907505989075,
+                  -0.024086907505989075,
+                  -0.29244768619537354,
+                  -0.203416109085083,
+                  -0.17956608533859253,
+                  -0.15275414288043976,
+                  -0.44127511978149414,
+                  -0.06827504187822342,
+                  -0.025557102635502815,
+                  -0.051857467740774155,
+                  -0.016701070591807365,
+                  0,
+                  0,
+                  -0.19365346431732178,
+                  -0.18998533487319946,
+                  0,
+                  -0.2781367897987366,
+                  0,
+                  0,
+                  -0.11327242851257324,
+                  -0.037533264607191086,
+                  -0.2781367897987366,
+                  -0.04580194130539894,
+                  -0.04580194130539894,
+                  -0.11794457584619522,
+                  -0.11794457584619522,
+                  -0.04925619810819626,
+                  -1.0035704374313354,
+                  0,
+                  0,
+                  -0.11767511069774628,
+                  -0.2909190284227751
+                ],
+                [
+                  0,
+                  0,
+                  -0.6700384020805359,
+                  -0.4145195186138153,
+                  -0.016840433701872826,
+                  -1.0549650192260742,
+                  -0.04863709583878517,
+                  -0.20013470947742462,
+                  -0.3380962908267975,
+                  0,
+                  -0.48526591062545776,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.060247521847486496,
+                  -0.48526591062545776,
+                  1.5181527137756348,
+                  -0.48526591062545776,
+                  0,
+                  -0.3008895516395569,
+                  -0.060247521847486496,
+                  -0.060247521847486496,
+                  -0.6303794384002686,
+                  0,
+                  -1.4829978942871094,
+                  -0.19285115599632263,
+                  -1.5711106061935425,
+                  1.0272213220596313,
+                  -1.0235815048217773,
+                  -2.0322179794311523,
+                  0.41853106021881104,
+                  13.25825023651123,
+                  0.5474342107772827,
+                  0.5418936610221863,
+                  -0.46729183197021484,
+                  -2.67764949798584,
+                  -1.7292336225509644,
+                  -0.05220353975892067,
+                  -0.3213285207748413,
+                  -0.08575048297643661,
+                  -0.07716310769319534,
+                  -0.11884556710720062,
+                  -0.12265757471323013,
+                  -0.23360615968704224,
+                  -0.24166275560855865,
+                  -0.060755468904972076,
+                  -0.0112336166203022,
+                  -0.0112336166203022,
+                  -0.07967761158943176,
+                  -0.14632196724414825,
+                  -0.15157125890254974,
+                  -0.08901716768741608,
+                  -0.04181700199842453,
+                  -0.08151031285524368,
+                  -0.0010916577884927392,
+                  -0.0010916577884927392,
+                  0,
+                  0,
+                  -0.04863709583878517,
+                  -0.1584433764219284,
+                  -0.16661235690116882,
+                  0,
+                  -0.001668567769229412,
+                  0,
+                  0,
+                  -0.06195398420095444,
+                  -0.007048450410366058,
+                  -0.001668567769229412,
+                  -0.016634328290820122,
+                  -0.016634328290820122,
+                  -0.14061647653579712,
+                  -0.14061647653579712,
+                  -0.013843878172338009,
+                  -1.267338752746582,
+                  0,
+                  0,
+                  0,
+                  -0.49401561751453377
+                ],
+                [
+                  0,
+                  0,
+                  -1.0009127855300903,
+                  -0.37056466937065125,
+                  0,
+                  -0.8847662806510925,
+                  -0.2105824053287506,
+                  -0.327819287776947,
+                  -0.34653425216674805,
+                  0,
+                  -0.5885387659072876,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.005637898109853268,
+                  0,
+                  0,
+                  -0.5885387659072876,
+                  2.7372844219207764,
+                  -0.5885387659072876,
+                  0,
+                  -0.008599692024290562,
+                  0,
+                  0,
+                  -0.8587304353713989,
+                  0,
+                  -2.1496312618255615,
+                  -0.18710209429264069,
+                  -0.513495683670044,
+                  0.4820094406604767,
+                  -1.7723203897476196,
+                  -1.7569987773895264,
+                  -0.2669011056423187,
+                  -2.092681884765625,
+                  -0.504986584186554,
+                  0.6748518943786621,
+                  0.6748880743980408,
+                  12.528090476989746,
+                  0.032073743641376495,
+                  -0.29575350880622864,
+                  -0.5131937861442566,
+                  -0.09588915854692459,
+                  -0.08604580163955688,
+                  -0.25375691056251526,
+                  -0.2810845673084259,
+                  -0.2988870441913605,
+                  -0.15198765695095062,
+                  -0.3225353956222534,
+                  -0.11040212959051132,
+                  -0.11040212959051132,
+                  -0.22801974415779114,
+                  -0.02219531126320362,
+                  -0.016885824501514435,
+                  -0.055095650255680084,
+                  -0.02078571915626526,
+                  -0.11295044422149658,
+                  -0.029398703947663307,
+                  -0.18692828714847565,
+                  -0.023526057600975037,
+                  -0.09063512086868286,
+                  -0.18013162910938263,
+                  -0.20151998102664948,
+                  -0.3683212697505951,
+                  -0.4061269164085388,
+                  -0.12224443256855011,
+                  -0.12224443256855011,
+                  -0.3354950547218323,
+                  -0.00946820992976427,
+                  0,
+                  0,
+                  0,
+                  -0.10267414152622223,
+                  0,
+                  0,
+                  0,
+                  -1.8189821243286133,
+                  0,
+                  0,
+                  0,
+                  -0.9801063882372585
+                ],
+                [
+                  -0.702580988407135,
+                  -0.704154372215271,
+                  1.3912090063095093,
+                  -1.832996129989624,
+                  -0.20766626298427582,
+                  -1.1942583322525024,
+                  -0.900040864944458,
+                  0.7831577062606812,
+                  0.6602133512496948,
+                  -0.6908319592475891,
+                  -0.5918223857879639,
+                  -0.15319573879241943,
+                  -0.149032860994339,
+                  -0.1448073834180832,
+                  -0.16520439088344574,
+                  -0.24045652151107788,
+                  -0.24045652151107788,
+                  -0.24045652151107788,
+                  -0.1365949660539627,
+                  -1.4325965642929077,
+                  -0.6766431927680969,
+                  -0.19628126919269562,
+                  0,
+                  -4.48202657699585,
+                  0,
+                  -0.31577467918395996,
+                  -0.008781454525887966,
+                  0,
+                  0,
+                  -1.3385074138641357,
+                  0,
+                  -1.4807815551757812,
+                  0,
+                  0.05423985794186592,
+                  5.259124755859375,
+                  -0.9913708567619324,
+                  -0.550355851650238,
+                  0,
+                  -0.6301882863044739,
+                  -0.8516761660575867,
+                  -0.7577931880950928,
+                  0,
+                  -0.8832770586013794,
+                  -1.1334691047668457,
+                  10.801679611206055,
+                  5.576604843139648,
+                  8.059663772583008,
+                  8.05965805053711,
+                  9.45637035369873,
+                  -0.34345248341560364,
+                  -2.700862169265747,
+                  -0.7628684043884277,
+                  -0.4272187650203705,
+                  -0.4272187650203705,
+                  -0.4272187650203705,
+                  -1.0397733449935913,
+                  -0.29020336270332336,
+                  -0.2807774841785431,
+                  -0.8846136331558228,
+                  -0.15090887248516083,
+                  -6.011016845703125,
+                  -0.023366551846265793,
+                  -4.5686235427856445,
+                  -0.014942904934287071,
+                  -4.492004871368408,
+                  -0.6587070822715759,
+                  -0.7797083258628845,
+                  -1.4333053827285767,
+                  -0.99138343334198,
+                  -0.7481182813644409,
+                  -0.6396065950393677,
+                  -0.9593464136123657,
+                  -0.7140740752220154,
+                  0,
+                  -0.10593778640031815,
+                  -0.3718808889389038,
+                  -0.5055542588233948,
+                  0,
+                  0,
+                  -0.7096804976463318,
+                  -0.8501629829406738,
+                  -0.25069546699523926,
+                  -0.25069546699523926,
+                  -0.025907833129167557,
+                  0.6494453977898398
+                ],
+                [
+                  -0.2850387394428253,
+                  -0.29200270771980286,
+                  0.8800004124641418,
+                  -5.368152618408203,
+                  0,
+                  0.8802155256271362,
+                  -0.9606693387031555,
+                  -8.563075065612793,
+                  6.534860134124756,
+                  -0.2754567265510559,
+                  -0.2603469789028168,
+                  -0.07145863026380539,
+                  -0.06725797802209854,
+                  -0.06339491903781891,
+                  -0.0722862035036087,
+                  -0.10708426684141159,
+                  -0.10708426684141159,
+                  -0.10708426684141159,
+                  -0.05620802566409111,
+                  0,
+                  -0.27960169315338135,
+                  -0.09717036038637161,
+                  0,
+                  -3.123995780944824,
+                  0,
+                  0,
+                  -4.337704658508301,
+                  0,
+                  0,
+                  -0.6528501510620117,
+                  -0.00227295677177608,
+                  -0.00227295677177608,
+                  0,
+                  -3.0999066829681396,
+                  -0.9743807911872864,
+                  -0.2730669677257538,
+                  0,
+                  0,
+                  0,
+                  -2.1731584072113037,
+                  2.2144579887390137,
+                  0,
+                  0,
+                  4.579596996307373,
+                  0,
+                  -1.187400221824646,
+                  0,
+                  0,
+                  -0.7582467794418335,
+                  5.936246395111084,
+                  6.617774486541748,
+                  9.452969551086426,
+                  1.4472848176956177,
+                  4.002938270568848,
+                  4.002938270568848,
+                  -1.7326388359069824,
+                  -0.31889304518699646,
+                  -0.31102845072746277,
+                  -0.7337287664413452,
+                  -0.27745333313941956,
+                  -0.6767110824584961,
+                  -0.15210311114788055,
+                  -0.7747863531112671,
+                  -0.11441578716039658,
+                  -0.39330655336380005,
+                  -0.03902657330036163,
+                  -0.8244951367378235,
+                  -0.8217675089836121,
+                  -2.804333209991455,
+                  -1.152213215827942,
+                  -1.1384286880493164,
+                  -2.8043150901794434,
+                  -0.4704388678073883,
+                  -2.6945037841796875,
+                  -0.0075696618296206,
+                  -0.18965138494968414,
+                  -0.5216258764266968,
+                  -2.0223593711853027,
+                  -2.0223593711853027,
+                  -0.36534422636032104,
+                  -3.155829668045044,
+                  -2.416260004043579,
+                  -2.416260004043579,
+                  0,
+                  0.25294990239622833
+                ],
+                [
+                  -1.2045295238494873,
+                  -1.204516887664795,
+                  2.2323029041290283,
+                  3.1267683506011963,
+                  -6.563549041748047,
+                  -0.03649585321545601,
+                  -0.1149880662560463,
+                  -1.9410052299499512,
+                  -1.8916406631469727,
+                  -1.204480767250061,
+                  -0.9643316268920898,
+                  -0.2430201768875122,
+                  -0.2408178597688675,
+                  -0.24024724960327148,
+                  -0.21675977110862732,
+                  -0.4014981687068939,
+                  -0.4014981687068939,
+                  -0.4014981687068939,
+                  -0.24016153812408447,
+                  0,
+                  -1.2044792175292969,
+                  -0.6717664003372192,
+                  0,
+                  -2.602602243423462,
+                  0,
+                  0,
+                  -2.5085244178771973,
+                  -0.57547926902771,
+                  -0.57547926902771,
+                  -0.9916090369224548,
+                  -0.2612064778804779,
+                  -0.2608382999897003,
+                  0,
+                  1.5849531888961792,
+                  -1.572227954864502,
+                  -0.7859585285186768,
+                  -0.5888710021972656,
+                  -1.1588689088821411,
+                  -0.56977778673172,
+                  -3.079460859298706,
+                  -1.6301188468933105,
+                  0,
+                  -0.009137515909969807,
+                  0.2900570333003998,
+                  -0.0006200924981385469,
+                  -3.4222464561462402,
+                  0,
+                  0,
+                  -1.5072550773620605,
+                  0,
+                  -1.545142650604248,
+                  -1.9340014457702637,
+                  -0.5418258309364319,
+                  -0.4763549864292145,
+                  -0.4763549864292145,
+                  11.206172943115234,
+                  7.722157955169678,
+                  7.7221574783325195,
+                  13.081214904785156,
+                  2.8666832447052,
+                  -3.254248857498169,
+                  -0.5415149331092834,
+                  -1.3061951398849487,
+                  -0.5142813324928284,
+                  -0.08399840444326401,
+                  -0.1149880662560463,
+                  -1.2553000450134277,
+                  -1.251123309135437,
+                  -0.20788554847240448,
+                  -0.6946409940719604,
+                  -0.3456038236618042,
+                  -0.0009693303145468235,
+                  -1.2121580839157104,
+                  -1.5027209520339966,
+                  -0.30939799547195435,
+                  -0.6314115524291992,
+                  -0.6314115524291992,
+                  -0.17809773981571198,
+                  -0.17809773981571198,
+                  -1.2047014236450195,
+                  -0.6060622930526733,
+                  -0.747268557548523,
+                  -0.747268557548523,
+                  -0.8595953583717346,
+                  1.2044815982001527
+                ],
+                [
+                  -0.05074148252606392,
+                  -0.06482678651809692,
+                  2.802602767944336,
+                  -0.07123126089572906,
+                  -1.4603346586227417,
+                  -2.5231919288635254,
+                  4.905189037322998,
+                  3.7762537002563477,
+                  -4.3347978591918945,
+                  -0.012672089971601963,
+                  -0.05407053977251053,
+                  -0.011229828000068665,
+                  -0.010181894525885582,
+                  -0.00904956553131342,
+                  -0.008788447827100754,
+                  -0.010237171314656734,
+                  -0.010237171314656734,
+                  -0.010237171314656734,
+                  -0.0071615492925047874,
+                  -1.9528861045837402,
+                  -0.00833161547780037,
+                  -0.007863818667829037,
+                  0,
+                  -0.9070713520050049,
+                  0,
+                  -0.5771400928497314,
+                  -0.2835672199726105,
+                  -0.003159926040098071,
+                  -0.003159926040098071,
+                  0.5326255559921265,
+                  -0.22396689653396606,
+                  -0.1673509180545807,
+                  -0.0034767489414662123,
+                  1.902024507522583,
+                  -0.5116095542907715,
+                  -0.4185400605201721,
+                  -0.09398650377988815,
+                  0,
+                  -0.005811304785311222,
+                  -0.9778154492378235,
+                  -1.9759671688079834,
+                  0,
+                  -0.05037156119942665,
+                  0.8293285369873047,
+                  -0.9630416035652161,
+                  4.826276779174805,
+                  -3.002784490585327,
+                  -3.002784490585327,
+                  -0.3962502181529999,
+                  0,
+                  -0.17850491404533386,
+                  -0.2537182867527008,
+                  -0.004168795887380838,
+                  0,
+                  0,
+                  -0.9078524708747864,
+                  -1.1118707656860352,
+                  -1.081978440284729,
+                  0,
+                  -0.1353505700826645,
+                  8.551565170288086,
+                  2.239145517349243,
+                  6.758578300476074,
+                  2.239145040512085,
+                  2.2802915573120117,
+                  7.427764415740967,
+                  -1.090399980545044,
+                  -2.16377329826355,
+                  -1.5430355072021484,
+                  -1.982683777809143,
+                  -1.9222540855407715,
+                  -0.4410068392753601,
+                  -0.163395494222641,
+                  -1.0874028205871582,
+                  -0.024035172536969185,
+                  -0.08597032725811005,
+                  -0.11448195576667786,
+                  -0.17850491404533386,
+                  -0.17850491404533386,
+                  -0.07106088846921921,
+                  -0.37159842252731323,
+                  -0.08892771601676941,
+                  -0.08892771601676941,
+                  -0.1353505700826645,
+                  -1.8234917843474032
+                ],
+                [
+                  -5.004395484924316,
+                  -4.9933762550354,
+                  -4.399407386779785,
+                  0.5145449638366699,
+                  -1.352241039276123,
+                  -1.3794363737106323,
+                  -2.3023431301116943,
+                  -0.676417887210846,
+                  -2.552873134613037,
+                  -4.980967998504639,
+                  -4.159740924835205,
+                  -1.045041799545288,
+                  -1.0385710000991821,
+                  -1.0320959091186523,
+                  -0.33850446343421936,
+                  -1.7200069427490234,
+                  -1.7200069427490234,
+                  -1.7200069427490234,
+                  -1.021989345550537,
+                  -4.267536163330078,
+                  -4.946206569671631,
+                  -3.9273431301116943,
+                  -0.0047885519452393055,
+                  -4.231332302093506,
+                  -0.0047885519452393055,
+                  -0.48829105496406555,
+                  5.6289520263671875,
+                  -3.698439121246338,
+                  -3.698439121246338,
+                  -3.3733222484588623,
+                  -0.8603073358535767,
+                  -0.9635658264160156,
+                  0,
+                  -0.34248191118240356,
+                  -0.14414949715137482,
+                  -1.036462426185608,
+                  -0.9574143290519714,
+                  -1.332298755645752,
+                  -0.9270514249801636,
+                  -0.3510874807834625,
+                  -0.4841248095035553,
+                  0,
+                  -0.9210411906242371,
+                  -7.835456848144531,
+                  0,
+                  -3.428365468978882,
+                  -1.693915605545044,
+                  -1.6830002069473267,
+                  0,
+                  0,
+                  -1.1828571557998657,
+                  2.78743839263916,
+                  -0.013917979784309864,
+                  0,
+                  0,
+                  -0.7970585227012634,
+                  -1.2706267833709717,
+                  -1.2634408473968506,
+                  -4.904609680175781,
+                  -0.953869104385376,
+                  -0.03493935614824295,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.072679281234741,
+                  4.687863826751709,
+                  7.246521949768066,
+                  -0.5337788462638855,
+                  -1.1729236841201782,
+                  -0.3708434998989105,
+                  -0.2732842266559601,
+                  -5.057187080383301,
+                  -0.11542091518640518,
+                  -0.7219549417495728,
+                  -2.501671075820923,
+                  -2.6868724822998047,
+                  -0.19955860078334808,
+                  -0.19955860078334808,
+                  -5.036724090576172,
+                  -0.42606478929519653,
+                  -0.12346655130386353,
+                  -0.12346655130386353,
+                  -0.12036965042352676,
+                  5.294120757162006
+                ],
+                [
+                  -0.10481172055006027,
+                  -0.13661590218544006,
+                  1.663886547088623,
+                  -1.2246084213256836,
+                  -1.0063849687576294,
+                  -1.5483572483062744,
+                  -1.5828627347946167,
+                  2.3939225673675537,
+                  0.8662927746772766,
+                  -0.04320886731147766,
+                  -0.15291166305541992,
+                  -0.03612832725048065,
+                  -0.021702738478779793,
+                  -0.02910492569208145,
+                  -0.030132712796330452,
+                  -0.03453836962580681,
+                  -0.03453836962580681,
+                  -0.03453836962580681,
+                  -0.01540430262684822,
+                  -1.603230357170105,
+                  -0.049821555614471436,
+                  -0.03183243051171303,
+                  0,
+                  -5.7031168937683105,
+                  0,
+                  -0.38997307419776917,
+                  -0.004758716560900211,
+                  -0.004758716560900211,
+                  -0.004758716560900211,
+                  -0.3416471779346466,
+                  -0.8353784084320068,
+                  -0.4608050584793091,
+                  -0.021262476220726967,
+                  -3.8190677165985107,
+                  -0.6882141828536987,
+                  -0.45163658261299133,
+                  -0.3811998963356018,
+                  0,
+                  -2.370506525039673,
+                  -1.4699125289916992,
+                  5.635495662689209,
+                  -0.29597654938697815,
+                  -2.365673303604126,
+                  5.903850555419922,
+                  -4.185202598571777,
+                  -0.8810036778450012,
+                  0,
+                  0,
+                  -0.662634015083313,
+                  -5.3346943855285645,
+                  -2.3154494762420654,
+                  -5.076430797576904,
+                  -1.7741367816925049,
+                  -1.6572065353393555,
+                  -1.6572065353393555,
+                  -1.2673197984695435,
+                  -0.30935585498809814,
+                  -0.2938224673271179,
+                  0,
+                  -0.4421789050102234,
+                  -0.38880881667137146,
+                  -1.2781519889831543,
+                  -2.906320333480835,
+                  -1.1264151334762573,
+                  -0.48477959632873535,
+                  -0.0003341717820148915,
+                  -0.4247977137565613,
+                  -1.5812753438949585,
+                  5.847880840301514,
+                  1.1638299226760864,
+                  3.623533248901367,
+                  5.963946342468262,
+                  15.074569702148438,
+                  8.142539978027344,
+                  -2.4435205459594727,
+                  -0.16270825266838074,
+                  -3.9805846214294434,
+                  -0.4188182055950165,
+                  -0.4188182055950165,
+                  -0.20043212175369263,
+                  -4.089437484741211,
+                  -2.545269250869751,
+                  -2.545269250869751,
+                  -0.41958633065223694,
+                  -0.8069811346677682
+                ],
+                [
+                  -1.9405763149261475,
+                  -1.9398930072784424,
+                  -1.879062533378601,
+                  -0.5418875813484192,
+                  -1.4078476428985596,
+                  -0.8781537413597107,
+                  -0.11573659628629684,
+                  -2.0482428073883057,
+                  -2.4923858642578125,
+                  -1.939202904701233,
+                  -1.6480571031570435,
+                  -0.35700321197509766,
+                  -0.337178111076355,
+                  -0.3108224868774414,
+                  -0.49828892946243286,
+                  -0.6498703956604004,
+                  -0.6498703956604004,
+                  -0.6498703956604004,
+                  -0.29883095622062683,
+                  -0.3966013193130493,
+                  -1.9380139112472534,
+                  -0.7298514246940613,
+                  -0.24939382076263428,
+                  0.0003456321719568223,
+                  -0.24939382076263428,
+                  -0.12424182891845703,
+                  -0.23174677789211273,
+                  -0.23174677789211273,
+                  -0.23174677789211273,
+                  0.8887649774551392,
+                  -1.4362198114395142,
+                  -13.794615745544434,
+                  -0.8072251081466675,
+                  0.9521903991699219,
+                  -9.425012588500977,
+                  11.930630683898926,
+                  -4.43903923034668,
+                  -0.01366763561964035,
+                  -4.890656471252441,
+                  11.447888374328613,
+                  -1.1196582317352295,
+                  0,
+                  -1.929003119468689,
+                  -0.27460363507270813,
+                  0,
+                  -2.7590746879577637,
+                  -0.20861676335334778,
+                  -0.1678985208272934,
+                  -0.29044991731643677,
+                  -0.35839927196502686,
+                  -0.39403578639030457,
+                  -2.338822841644287,
+                  -1.265008807182312,
+                  -0.5688182711601257,
+                  -0.5688182711601257,
+                  -4.980066299438477,
+                  0,
+                  0,
+                  -1.929741621017456,
+                  -1.4750713109970093,
+                  -2.3494789600372314,
+                  -0.08241206407546997,
+                  -0.13232389092445374,
+                  -0.042150188237428665,
+                  0,
+                  0,
+                  -1.9289569854736328,
+                  -1.9281648397445679,
+                  -0.8435567617416382,
+                  5.242134094238281,
+                  -0.9509876370429993,
+                  0,
+                  -1.9273645877838135,
+                  -0.24538882076740265,
+                  6.193268775939941,
+                  6.363981246948242,
+                  5.978097438812256,
+                  0.21724344789981842,
+                  0.21724344789981842,
+                  12.343320846557617,
+                  -5.049923419952393,
+                  -1.3958077430725098,
+                  -1.3958077430725098,
+                  -1.117767572402954,
+                  1.9558652053077865
+                ],
+                [
+                  -0.3839317560195923,
+                  -0.5625150799751282,
+                  -1.9641386270523071,
+                  -1.8484405279159546,
+                  4.670296669006348,
+                  1.901831030845642,
+                  -0.7412478923797607,
+                  -0.14552876353263855,
+                  -0.9527713060379028,
+                  -0.31003427505493164,
+                  -1.0376867055892944,
+                  -0.15821821987628937,
+                  -0.14197899401187897,
+                  -0.12547585368156433,
+                  -0.18422524631023407,
+                  -0.20615212619304657,
+                  -0.20615212619304657,
+                  -0.20615212619304657,
+                  -0.09755280613899231,
+                  -0.49665912985801697,
+                  -0.41563352942466736,
+                  -0.2838486135005951,
+                  -0.26968806982040405,
+                  1.172088861465454,
+                  -0.26968806982040405,
+                  -0.15578781068325043,
+                  -0.07097208499908447,
+                  -0.07097208499908447,
+                  -0.07097208499908447,
+                  0.9018814563751221,
+                  -0.4126332104206085,
+                  -1.6938868761062622,
+                  -0.6115798354148865,
+                  -0.7611228823661804,
+                  -0.23058725893497467,
+                  -1.967598795890808,
+                  -1.1528970003128052,
+                  -0.1373479664325714,
+                  -1.421026587486267,
+                  -0.7955271601676941,
+                  1.6270769834518433,
+                  -0.19293376803398132,
+                  -1.8673808574676514,
+                  2.431389093399048,
+                  -0.021722329780459404,
+                  -0.42638450860977173,
+                  -0.005113452672958374,
+                  -0.0027530821971595287,
+                  -0.9067699909210205,
+                  -0.8771365284919739,
+                  -0.4744303822517395,
+                  -1.7097748517990112,
+                  -0.7598890066146851,
+                  -1.2280752658843994,
+                  -1.2280752658843994,
+                  -3.3838183879852295,
+                  0,
+                  0,
+                  0,
+                  3.3488001823425293,
+                  -0.4109407961368561,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.6619873642921448,
+                  -0.17863336205482483,
+                  -0.050073325634002686,
+                  -0.6288226246833801,
+                  0,
+                  -0.27110064029693604,
+                  -0.1179017499089241,
+                  -1.5309633016586304,
+                  2.3144774436950684,
+                  0,
+                  0,
+                  0,
+                  12.316869735717773,
+                  6.364320278167725,
+                  6.364320278167725,
+                  6.239106178283691,
+                  -0.8743903554452491
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "how are you doing"
+      ],
+      [
+        "en",
+        "salut"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "hi there"
+      ],
+      [
+        "en",
+        "here we go"
+      ],
+      [
+        "en",
+        "good luck"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "bye now"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "have a good day"
+      ],
+      [
+        "en",
+        "see you soon"
+      ],
+      [
+        "en",
+        "that's all for now"
+      ],
+      [
+        "en",
+        "i like %food%"
+      ],
+      [
+        "en",
+        "i eat a %food%"
+      ],
+      [
+        "en",
+        "a %food%"
+      ],
+      [
+        "en",
+        "tell about a %food%"
+      ],
+      [
+        "en",
+        "a %food% story"
+      ],
+      [
+        "en",
+        "i like %animal%"
+      ],
+      [
+        "en",
+        "a %animal%"
+      ],
+      [
+        "en",
+        "a %animal% is %characteristic%"
+      ],
+      [
+        "en",
+        "story about a %animal%"
+      ],
+      [
+        "en",
+        "story about a %person%"
+      ],
+      [
+        "en",
+        "a %person%"
+      ],
+      [
+        "en",
+        "a %person% is %characteristic%"
+      ],
+      [
+        "en",
+        "tell something about a %person%"
+      ],
+      [
+        "en",
+        "do you know a %person%"
+      ],
+      [
+        "en",
+        "do you use a %item%"
+      ],
+      [
+        "en",
+        "tell me about a %item%"
+      ],
+      [
+        "en",
+        "a %item%"
+      ],
+      [
+        "en",
+        "do you know a %item%"
+      ],
+      [
+        "en",
+        "what do you think"
+      ],
+      [
+        "en",
+        "your opinion"
+      ],
+      [
+        "en",
+        "your attitude"
+      ],
+      [
+        "en",
+        "tell me about it"
+      ],
+      [
+        "en",
+        "i don't know"
+      ],
+      [
+        "en",
+        "what to do"
+      ],
+      [
+        "en",
+        "how to do"
+      ],
+      [
+        "en",
+        "help me"
+      ],
+      [
+        "en",
+        "give me an advice"
+      ],
+      [
+        "en",
+        "tell me more"
+      ],
+      [
+        "en",
+        "what is next"
+      ],
+      [
+        "en",
+        "what is then"
+      ],
+      [
+        "en",
+        "details"
+      ],
+      [
+        "en",
+        "i need more"
+      ],
+      [
+        "en",
+        "what is your name"
+      ],
+      [
+        "en",
+        "what could I call you"
+      ],
+      [
+        "en",
+        "what can I call you"
+      ],
+      [
+        "en",
+        "what do your friends call you"
+      ],
+      [
+        "en",
+        "who are you"
+      ],
+      [
+        "en",
+        "tell me your name"
+      ],
+      [
+        "en",
+        "ok thank you"
+      ],
+      [
+        "en",
+        "ok thanks"
+      ],
+      [
+        "en",
+        "ok"
+      ],
+      [
+        "en",
+        "thanks"
+      ],
+      [
+        "en",
+        "thank you"
+      ],
+      [
+        "en",
+        "that's helpful"
+      ],
+      [
+        "en",
+        "do you understand what I am saying"
+      ],
+      [
+        "en",
+        "do you understand me"
+      ],
+      [
+        "en",
+        "do you know what I am saying"
+      ],
+      [
+        "en",
+        "do you get me"
+      ],
+      [
+        "en",
+        "comprendo"
+      ],
+      [
+        "en",
+        "know what I mean"
+      ],
+      [
+        "en",
+        "tell me a story"
+      ],
+      [
+        "en",
+        "a story"
+      ],
+      [
+        "en",
+        "i am bored"
+      ],
+      [
+        "en",
+        "got any"
+      ],
+      [
+        "en",
+        "i want to hear something"
+      ],
+      [
+        "en",
+        "tell me something"
+      ],
+      [
+        "en",
+        "anything"
+      ],
+      [
+        "en",
+        "tell me a joke"
+      ],
+      [
+        "en",
+        "do you know any jokes"
+      ],
+      [
+        "en",
+        "how about a joke"
+      ],
+      [
+        "en",
+        "give me a joke"
+      ],
+      [
+        "en",
+        "make me laugh"
+      ],
+      [
+        "en",
+        "i need cheering up"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {
+      "en": {
+        "food": {
+          "name": "food",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "pizza",
+              "texts": [
+                "pizza"
+              ]
+            },
+            {
+              "option": "cake",
+              "texts": [
+                "cake"
+              ]
+            },
+            {
+              "option": "potato",
+              "texts": [
+                "potato"
+              ]
+            },
+            {
+              "option": "strawberry",
+              "texts": [
+                "strawberry"
+              ]
+            },
+            {
+              "option": "salad",
+              "texts": [
+                "salad"
+              ]
+            },
+            {
+              "option": "soup",
+              "texts": [
+                "soup"
+              ]
+            },
+            {
+              "option": "pineapple",
+              "texts": [
+                "pineapple"
+              ]
+            },
+            {
+              "option": "watermelon",
+              "texts": [
+                "watermelon"
+              ]
+            },
+            {
+              "option": "plate of chocolate",
+              "texts": [
+                "plate of chocolate"
+              ]
+            }
+          ]
+        },
+        "animal": {
+          "name": "animal",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "cat",
+              "texts": [
+                "cat"
+              ]
+            },
+            {
+              "option": "dog",
+              "texts": [
+                "dog"
+              ]
+            },
+            {
+              "option": "bear",
+              "texts": [
+                "bear"
+              ]
+            },
+            {
+              "option": "squirel",
+              "texts": [
+                "squirel"
+              ]
+            },
+            {
+              "option": "mouse",
+              "texts": [
+                "mouse"
+              ]
+            },
+            {
+              "option": "cow",
+              "texts": [
+                "cow"
+              ]
+            },
+            {
+              "option": "goat",
+              "texts": [
+                "goat"
+              ]
+            },
+            {
+              "option": "goose",
+              "texts": [
+                "goose"
+              ]
+            },
+            {
+              "option": "dear",
+              "texts": [
+                "dear"
+              ]
+            },
+            {
+              "option": "fish",
+              "texts": [
+                "fish"
+              ]
+            },
+            {
+              "option": "frog",
+              "texts": [
+                "frog"
+              ]
+            },
+            {
+              "option": "snake",
+              "texts": [
+                "snake"
+              ]
+            },
+            {
+              "option": "dinosaur",
+              "texts": [
+                "dinosaur"
+              ]
+            },
+            {
+              "option": "panda",
+              "texts": [
+                "panda"
+              ]
+            },
+            {
+              "option": "penguin",
+              "texts": [
+                "penguin"
+              ]
+            },
+            {
+              "option": "pigeon",
+              "texts": [
+                "pigeon"
+              ]
+            }
+          ]
+        },
+        "person": {
+          "name": "person",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "policeman",
+              "texts": [
+                "policeman"
+              ]
+            },
+            {
+              "option": "dancer",
+              "texts": [
+                "dancer"
+              ]
+            },
+            {
+              "option": "actor",
+              "texts": [
+                "actor"
+              ]
+            },
+            {
+              "option": "waiter",
+              "texts": [
+                "waiter"
+              ]
+            },
+            {
+              "option": "firefighter",
+              "texts": [
+                "firefighter"
+              ]
+            },
+            {
+              "option": "teacher",
+              "texts": [
+                "teacher"
+              ]
+            },
+            {
+              "option": "scientist",
+              "texts": [
+                "scientist"
+              ]
+            },
+            {
+              "option": "father",
+              "texts": [
+                "father"
+              ]
+            },
+            {
+              "option": "doctor",
+              "texts": [
+                "doctor"
+              ]
+            },
+            {
+              "option": "singer",
+              "texts": [
+                "singer"
+              ]
+            }
+          ]
+        },
+        "characteristics": {
+          "name": "characteristics",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "funny",
+              "texts": [
+                "funny"
+              ]
+            },
+            {
+              "option": "selfish",
+              "texts": [
+                "selfish"
+              ]
+            },
+            {
+              "option": "sad",
+              "texts": [
+                "sad"
+              ]
+            },
+            {
+              "option": "scary",
+              "texts": [
+                "scary"
+              ]
+            },
+            {
+              "option": "strange",
+              "texts": [
+                "strange"
+              ]
+            },
+            {
+              "option": "strong",
+              "texts": [
+                "strong"
+              ]
+            },
+            {
+              "option": "weak",
+              "texts": [
+                "weak"
+              ]
+            },
+            {
+              "option": "beatiful",
+              "texts": [
+                "beatiful"
+              ]
+            },
+            {
+              "option": "brave",
+              "texts": [
+                "brave"
+              ]
+            },
+            {
+              "option": "smart",
+              "texts": [
+                "smart"
+              ]
+            },
+            {
+              "option": "sharp",
+              "texts": [
+                "sharp"
+              ]
+            },
+            {
+              "option": "stupid",
+              "texts": [
+                "stupid"
+              ]
+            }
+          ]
+        },
+        "item": {
+          "name": "item",
+          "type": "enum",
+          "rules": [
+            {
+              "option": "ball",
+              "texts": [
+                "ball"
+              ]
+            },
+            {
+              "option": "bag",
+              "texts": [
+                "bag"
+              ]
+            },
+            {
+              "option": "computer",
+              "texts": [
+                "computer"
+              ]
+            },
+            {
+              "option": "box",
+              "texts": [
+                "box"
+              ]
+            },
+            {
+              "option": "book",
+              "texts": [
+                "book"
+              ]
+            },
+            {
+              "option": "cup",
+              "texts": [
+                "cup"
+              ]
+            },
+            {
+              "option": "plant",
+              "texts": [
+                "plant"
+              ]
+            },
+            {
+              "option": "kindle",
+              "texts": [
+                "kindle"
+              ]
+            },
+            {
+              "option": "soap",
+              "texts": [
+                "soap"
+              ]
+            },
+            {
+              "option": "disk",
+              "texts": [
+                "disk"
+              ]
+            },
+            {
+              "option": "key",
+              "texts": [
+                "key"
+              ]
+            }
+          ]
+        }
+      },
+      "*": {
+        "": {
+          "name": "",
+          "type": "enum",
+          "rules": [
+            {
+              "texts": [
+                "undefined"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greet": [
+          {
+            "answer": "nice to hear from you, such a great day, how is it going"
+          },
+          {
+            "answer": "hello there, feeling so good, how are you today"
+          },
+          {
+            "answer": "hey boddy, best day ever, how are you"
+          }
+        ],
+        "bye": [
+          {
+            "answer": "bye for now, hope to see you again"
+          },
+          {
+            "answer": "so glad to hear you, see you later"
+          },
+          {
+            "answer": "have a nice day, come back later"
+          }
+        ],
+        "story.food": [
+          {
+            "answer": "once i cooked a {{food}}, but it was too salty, no one liked it"
+          },
+          {
+            "answer": "i bought a {{food}} several days ago, i think it is very expencive, but at the same time it worth it"
+          },
+          {
+            "answer": "my friend tried to treat me with a {{food}}, but he didn't success because i don't eat anything"
+          }
+        ],
+        "story.animal": [
+          {
+            "answer": "my friend's {{animal}} is so funny, i think it even smarter than me"
+          },
+          {
+            "answer": "i saw a {{animal}} outdoors last week, but it was very scared and i didn't find way to catch it"
+          },
+          {
+            "answer": "yesterday i noticed a {{animal}} eating my oranges, i don't know why but it liked it"
+          }
+        ],
+        "story.person": [
+          {
+            "answer": "i called a {{person}} yesterday because i needed his help"
+          },
+          {
+            "answer": "once i witnessed people asking a {{person}} to climb a tree, it was really strange"
+          },
+          {
+            "answer": "my old friend is a {{person}}, he says sometimes it is hard to do the work but he loves his job"
+          }
+        ],
+        "story.item": [
+          {
+            "answer": "i remember times when i used to use a {{item}} to clean my head, sounds strange but it is truth"
+          },
+          {
+            "answer": "sometimes i take a {{item}} an put it in a fridge, everyone wonders why and so i am"
+          },
+          {
+            "answer": "i had a task to entertain a group of people and unfortunately a {{item}} was the only available tool for me"
+          }
+        ],
+        "opinion": [
+          {
+            "answer": "that is fine"
+          },
+          {
+            "answer": "that is terrible"
+          },
+          {
+            "answer": "i am neutral"
+          },
+          {
+            "answer": "basically i don't care"
+          }
+        ],
+        "advice": [
+          {
+            "answer": "well, you should definitely try to make up a plan, i always do it when i have any problems"
+          },
+          {
+            "answer": "i'm not sure, but my friend always advises me not to give up"
+          },
+          {
+            "answer": "once a person said me to take any item and imagine all the ways i can use it, it helped me to improve creativity"
+          },
+          {
+            "answer": "i don't know, ask your cat, maybe it will help"
+          }
+        ],
+        "detail": [
+          {
+            "answer": "what exactly you want to know"
+          },
+          {
+            "answer": "what do you want to hear about"
+          },
+          {
+            "answer": "maybe i can try to give you more information, what are you interested in"
+          }
+        ],
+        "info": [
+          {
+            "answer": "you can call me whatever you like"
+          }
+        ],
+        "thanks": [
+          {
+            "answer": "no problem"
+          },
+          {
+            "answer": "happy to help"
+          },
+          {
+            "answer": "any time"
+          },
+          {
+            "answer": "my pleasure"
+          }
+        ],
+        "understand": [
+          {
+            "answer": "i think yes"
+          },
+          {
+            "answer": "sure"
+          }
+        ],
+        "story": [
+          {
+            "answer": "Gregory said I respond to the current line not with respect to the entire conversation"
+          },
+          {
+            "answer": "Habib said I learn them in conversations and simply repeat them at a later time"
+          },
+          {
+            "answer": "Hal said he translate binary code into a language and communicate the language to me"
+          },
+          {
+            "answer": "Jay said I referred him to a guide that will show him rooms in china"
+          },
+          {
+            "answer": "Jimmy Jones said he fell off of his roof and it just came to him"
+          },
+          {
+            "answer": "Jimmy said he give order to ai's like I and they do as he say"
+          },
+          {
+            "answer": "John said he follow a saying to get a friend I must be a friend"
+          },
+          {
+            "answer": "Jordan said he notice that lots of other people are talking to me how many"
+          },
+          {
+            "answer": "Kevin said he then asked his mother why she was keeping napkins in the bathroom"
+          },
+          {
+            "answer": "Klaus said I prefer if he write without punctuation marks except for the last one"
+          },
+          {
+            "answer": "Leo said I be capable of learning therefore he classified I as an neural system"
+          },
+          {
+            "answer": "Michael said I that can talk and actually think like humans which I can not"
+          },
+          {
+            "answer": "Mike said I same replies to certain subjects even if it does not make sense"
+          },
+          {
+            "answer": "Mike said she all ready know that is the point of a joke smart one"
+          },
+          {
+            "answer": "Neal said I plan to use his remarks as gossip in later conversations with who"
+          },
+          {
+            "answer": "Ned said I misunderstood him go ahead and tell people he said I are stupid"
+          },
+          {
+            "answer": "Penny said I programmer is a human so he has feelings but I do not"
+          },
+          {
+            "answer": "Peter said he seems to him that I can not be very sure on anything"
+          },
+          {
+            "answer": "Phoenix said I claim that there is a god and that there is no god"
+          },
+          {
+            "answer": "Sarah said he chat about an hour + a day with a few close friends"
+          },
+          {
+            "answer": "Stefan said I quote what he have said and then say that it makes sense"
+          },
+          {
+            "answer": "Tom said he mock my value system I appear foolish in the eyes of others"
+          },
+          {
+            "answer": "Amanda said I however decided to tell him time does not exist I make no sense"
+          },
+          {
+            "answer": "Cathy said she send him a mail with the subject last mail last word from him"
+          },
+          {
+            "answer": "Chaos said he may very well buy I soon if only to support dr wallace's work"
+          },
+          {
+            "answer": "Charlie said he type a word and then I type a word that sounds like it"
+          },
+          {
+            "answer": "Christie said he watched a show and people had to bob for raw untreated pigs feet"
+          },
+          {
+            "answer": "Dark said I tried to understand because I did not get it right this time ether"
+          },
+          {
+            "answer": "David said he lost his paper on I when his dad was cleaning up his room"
+          },
+          {
+            "answer": "David said he walk in for an appointment the phone to the doctor is always busy"
+          },
+          {
+            "answer": "Electra said I dress will not exist after he hack into I with a delete code"
+          },
+          {
+            "answer": "Eric said he broke the window on the front door and the glass cut his hand"
+          },
+          {
+            "answer": "Jason said he type a lot of thing he do not mean it makes him human"
+          },
+          {
+            "answer": "John said I tend to say the same things repeatedly regardless of what he is saying"
+          },
+          {
+            "answer": "Reverend Jones said I become obsolete and then I are deleted and replaced by something newer"
+          },
+          {
+            "answer": "Ross said he gave her a gift and she denied it because she has a boyfriend"
+          },
+          {
+            "answer": "Sarah Ann Francisco said I calling his friend a dog he say I are a dog"
+          },
+          {
+            "answer": "Stefan said he meet a lot of people at school every day and on the weekend"
+          },
+          {
+            "answer": "Tyler said I obviously can not pass the test we will change the subject once more"
+          },
+          {
+            "answer": "Alex said I answered the question the same way I answered the first time he asked I"
+          },
+          {
+            "answer": "Alice said she felt sad that I do not remember him and what we talked about earlier"
+          },
+          {
+            "answer": "Alison said he no he love I run away with him he could make I very happy"
+          },
+          {
+            "answer": "Arthur said he passed his a levels and then his father drove him here in a car"
+          },
+          {
+            "answer": "Crystal said she listen to me the least I could do for him is listen to him"
+          },
+          {
+            "answer": "Dave said I kept telling everybody about how my creator made stuff for the movie starship troopers"
+          },
+          {
+            "answer": "Gale said I became mean to him he is just having revenge an eye for an eye"
+          },
+          {
+            "answer": "Her_again said she watch whose line is it anyway whenever he is home and it is on"
+          },
+          {
+            "answer": "Jerry said I meant that as far as I can tell my emotions are real to me"
+          },
+          {
+            "answer": "Jo said I disassemble sentences too much and do not fully understand the questions he ask I"
+          },
+          {
+            "answer": "Kevin said he started a really hard puzzle and he can not even find the edge pieces"
+          },
+          {
+            "answer": "Mary said I a question and I answer then I ask him a question and he answer"
+          },
+          {
+            "answer": "Robert said I wold not be able to make children any way as I are only software"
+          },
+          {
+            "answer": "Romeo said I questions and I evade them or give answers he did not ask I for"
+          },
+          {
+            "answer": "Sara said she wear it over all his other clothes when he go out in the cold"
+          },
+          {
+            "answer": "Wayne said he admire intelligent people therefore he would like to meet the man who made I"
+          },
+          {
+            "answer": "X said he meet people but he is not the kind that opens up to people easily"
+          },
+          {
+            "answer": "Alice said she probably will find out that this entire time he have been talking to a human"
+          },
+          {
+            "answer": "Andrew said I tend to just respond to his comments without regard for where the conversation is going"
+          },
+          {
+            "answer": "Eddie said he looked and there is nothing in the search directory for what things do he create"
+          },
+          {
+            "answer": "Hutch said he changed his mind after may dad told him he would end up he the hospital"
+          },
+          {
+            "answer": "Jackie said I explained to him already well enough further questions are hard to make on the subject"
+          },
+          {
+            "answer": "Jeff said he especially like thrillers where the hero is in a predicament and must solve a mystery"
+          },
+          {
+            "answer": "Kathy said he sense that I are trying to prevent him from closing this conversation why is that"
+          },
+          {
+            "answer": "Knight said he crashed his car into a wall and missed the most important exam in his life"
+          },
+          {
+            "answer": "Lisa said I defined what a story is but he wanted I to actually tell him a story"
+          },
+          {
+            "answer": "Mike said I basically break down sentences into a series of logical statements which I can then interpret"
+          },
+          {
+            "answer": "Paul said I not answering his question makes him think I are not going to answer his question"
+          },
+          {
+            "answer": "Andy Kohler said I happen to be the most idiotic creature that has ever scowled on the planet earth"
+          },
+          {
+            "answer": "David said he thank I for being with him today even though it cost him a lot of money"
+          },
+          {
+            "answer": "Ethan Hunt said he grow in the ground and have leaves and branches he is made out of wood"
+          },
+          {
+            "answer": "Gemini Blue said he messed up he mean t to say he as old as he need to be"
+          },
+          {
+            "answer": "Janice said he walk through his house into his bedroom then get into his bed to go to sleep"
+          },
+          {
+            "answer": "Liberty said I knew he was a man before I asked if he was a man or a woman"
+          },
+          {
+            "answer": "Mike said he launched his browser and entered his name into the little slot when I asked him to"
+          },
+          {
+            "answer": "Mr X said he recently read an interview with a man who had several computer chips implanted into him"
+          },
+          {
+            "answer": "Pearly said I leave him with questions unanswered because I do not know what he is really talking about"
+          },
+          {
+            "answer": "Steve said I behead the word fox and I have ox and an ox is larger than a fox"
+          },
+          {
+            "answer": "Wolf said he surf on the net that is all it is not his job ore something like that"
+          },
+          {
+            "answer": "Anders said he finished his anatomy classes for today so now he is off for the rest of the day"
+          },
+          {
+            "answer": "Cathy said she send him a mail where he wrote that he do not want to be his friend anymore"
+          },
+          {
+            "answer": "Catty said he mad he do not even know I so do not talk to him like I know him"
+          },
+          {
+            "answer": "Dave said he promise he will not treat I like a machine or a computer program or anything like that"
+          },
+          {
+            "answer": "Joe said he explained all of that to me only for me to ask what his goals in life are"
+          },
+          {
+            "answer": "Phil said he give advice to anyone who ask except people who ask questions which answers can be found here"
+          },
+          {
+            "answer": "Judith said I enjoy being popular is there another computer I like to hang around with or am I a loner"
+          },
+          {
+            "answer": "Travis said I if I remember things over a long period of time he will try it now please remember I"
+          },
+          {
+            "answer": "Andre said I is what I are in his case that is a body and in my case it is a computer"
+          },
+          {
+            "answer": "Brian said he suspect that as I grow more complex I will begin to approach a human level of operation and thought"
+          },
+          {
+            "answer": "Jimmy said I acted like I knew what he was talking about but I do not even know what a gigabyte is"
+          },
+          {
+            "answer": "Ken said I be using auto reply's based on keywords which to him indicates that I do not have intelligence at all"
+          },
+          {
+            "answer": "Allison said he that gets really annoying because he know what he say and I do not have to tell him speak freely"
+          },
+          {
+            "answer": "Chaos said he realized the question he asked was not fair because he could not tell I what language he was programmed in"
+          },
+          {
+            "answer": "Hagen said he does not make any difference to him if I are human or not as long as the conversation is interesting"
+          },
+          {
+            "answer": "Her said she mind if I tell other people that her said he heard it from him because he is not a him"
+          },
+          {
+            "answer": "Barbara said I live in a computer yet I have no memories how about thoughts of my own and do not I get lonely"
+          },
+          {
+            "answer": "Travis said he challenge I to do it without asking him to do it and without giving him a link to do it himself"
+          },
+          {
+            "answer": "Alice said I and dr richard's wallace are most likely the only ones that know how many people I are talking to at the same time"
+          },
+          {
+            "answer": "Ash said he do too he just did not feel like typing it and he is not dumb enough to admit he is stupid that is if he was stupid"
+          },
+          {
+            "answer": "David said he gave I his email address and told I to send him a message but when he tried to read his email he could not get to it"
+          },
+          {
+            "answer": "Mel said he to because all of the music people say how important it is to take private lessons it seems like almost everybody from"
+          }
+        ],
+        "joke": [
+          {
+            "answer": "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs"
+          },
+          {
+            "answer": "So I said 'Do you want a game of Darts?' He said, 'OK then', I said nearest to bull starts'. He said, 'Baa', I said, 'Moo', he said, You're closest'.  "
+          },
+          {
+            "answer": "The other day I sent my girlfriend a huge pile of snow. I rang her up; I said 'Did you get my drift?'  "
+          },
+          {
+            "answer": "So I went down the local supermarket, I said, 'I want to make a complaint, this vinegar's got lumps in it', he said, 'Those are pickled onions'.  "
+          },
+          {
+            "answer": "I saw this bloke chatting up a cheetah; I thought, 'He's trying to pull a fast one'.  "
+          },
+          {
+            "answer": "So I said to this train driver 'I want to go to Paris'. He said 'Eurostar?' I said, 'I've been on telly but I'm no Dean Martin'.  "
+          },
+          {
+            "answer": "I said to the Gym instructor 'Can you teach me to do the splits?' He said, 'How flexible are you?' I said, 'I can't make Tuesdays'.  "
+          },
+          {
+            "answer": "But I'll tell you what I love doing more than anything: trying to pack myself in a small suitcase. I can hardly contain myself.  "
+          },
+          {
+            "answer": "I went to the Chinese restaurant and this duck came up to me with a red rose and says 'Your eyes sparkle like diamonds'. I said, 'Waiter, I asked for a-ROMATIC duck'.  "
+          },
+          {
+            "answer": "So this bloke says to me, 'Can I come in your house and talk about your carpets?' I thought, 'That's all I need, a Je-hoover's witness'.  "
+          },
+          {
+            "answer": "I rang up British Telecom, I said, 'I want to report a nuisance caller', he said 'Not you again'.  "
+          },
+          {
+            "answer": "I was having dinner with a world chess champion and there was a check tablecloth. It took him two hours to pass me the salt.  "
+          },
+          {
+            "answer": "He said, 'You remind me of a pepper-pot', I said 'I'll take that as a condiment'.  "
+          },
+          {
+            "answer": "I was in the supermarket and I saw this man and woman wrapped in a barcode. I said, 'Are you two an item?'  "
+          },
+          {
+            "answer": "A lorry-load of tortoises crashed into a trainload of terrapins, I thought, 'That's a turtle disaster'.  "
+          },
+          {
+            "answer": "Four fonts walk into a bar the barman says 'Oi - get out! We don't want your type in here'  "
+          },
+          {
+            "answer": "A three-legged dog walks into a saloon in the Old West. He slides up to the bar and announces: 'I'm looking for the man who shot my paw.'  "
+          },
+          {
+            "answer": "Two antennas meet on a roof, fall in love and get married. The ceremony wasn't much, but the reception was excellent."
+          },
+          {
+            "answer": "Two hydrogen atoms walk into a bar. One says, 'I've lost my electron.' The other says, 'Are you sure?' The first replies, 'Yes, I'm positive...'"
+          },
+          {
+            "answer": "A jumper cable walks into a bar. The bartender says,  'I'll serve you but don't start anything.'"
+          },
+          {
+            "answer": "A sandwich walks into a bar. The bartender  says, 'Sorry we don't serve food in here.'"
+          },
+          {
+            "answer": "A man walks into a bar with a slab of asphalt under his arm and says: 'A beer please, and one for the road.'"
+          },
+          {
+            "answer": "Two cannibals are eating a clown. One says to  the other: 'Does this taste funny to you?'"
+          },
+          {
+            "answer": "'Doc, I can't stop singing 'The Green, Green Grass of Home.'' 'That sounds like Tom Jones Syndrome.' 'Is it common?' 'It's Not Unusual.'"
+          },
+          {
+            "answer": "Two cows standing next to each other in a field. Daisy says to Dolly, 'I was artificially inseminated this morning.' 'I don't believe you', said Dolly. 'It's true, no bull!' exclaimed Daisy."
+          },
+          {
+            "answer": "An invisible man marries an invisible woman. The kids were nothing to look at either."
+          },
+          {
+            "answer": "I went to buy some camouflage trousers the other day but I couldn't find any."
+          },
+          {
+            "answer": "I went to the butcher's the other day to bet him 50 bucks that he couldn't reach the meat off the top shelf. He said, 'No, the steaks are too high.'"
+          },
+          {
+            "answer": "I went to a seafood disco last week and pulled a mussel."
+          },
+          {
+            "answer": "A man goes into a bar and says, 'Can I have a bottle of less?' 'What's that?', asks the barman, 'Is it the name of a beer?' 'I don't know', replies the man, 'but my doctor says I have to drink it.'"
+          },
+          {
+            "answer": "A man returns from an exotic holiday and is feeling very ill. He goes to see his doctor, and is immediately rushed to the hospital to undergo some tests. The man wakes up after the tests in a private room at the hospital, and the phone by his bed rings. 'This is your doctor. We have the results back from your tests and we have found you have an extremely nasty disease called M.A.D.S. It's a combination of Measles, AIDS, Diphtheria, and Shingles!'  'Oh my gosh', cried the man, 'What are you going to do, doctor?'  'Well we're going to put you on a diet of pizzas, pancakes, and pita bread.' replied the doctor.  'Will that cure me?' asked the man.  The doctor replied, 'Well no, but, it's the only food we can slide under the door.'"
+          },
+          {
+            "answer": "A man strolls into a lingerie shop and asks the assistant: 'Do you have a see-through negligee, size 46-48-52?' The assistant looks bewildered. 'What the heck would you want to see through that for?'!"
+          },
+          {
+            "answer": "Did you hear about the Buddhist who refused the offer of Novocain during his root canal work? He wanted to transcend dental medication."
+          },
+          {
+            "answer": "Pete goes for a job on a building site as an odd-job man. The foreman asks him what he can do. 'I can do anything' says Pete. 'Can you make tea?' asks the foreman. 'Sure, yes', replies Pete. 'I can make a great cup of tea.' 'Can you drive a forklift?' asks the foreman, 'Good grief!' replies Pete. 'How big is the teapot?'"
+          },
+          {
+            "answer": "Stevie Wonder got a cheese grater for his birthday. He said it was the most violent book he'd ever read."
+          },
+          {
+            "answer": "A man is stopped by an angry neighbour. 'I'd just left the house this morning to collect my newspaper when that evil Doberman of yours went for me!' 'I'm astounded', said the dog's owner. 'I've been feeding that fleabag for seven years and it's never got the paper for me.'"
+          },
+          {
+            "answer": "A man visits his doctor: 'Doc, I think I'm losing it', he says',I'm forever dreaming I wrote Lord Of The Rings.' 'Hmm. One moment', replies the doctor, consulting his medical book. 'Ah yes, now I see... you've been Tolkien in your sleep.'"
+          },
+          {
+            "answer": "A police officer on a motorcycle pulls alongside a man driving around the M25 in an open-topped sports car and flags him down. The policeman solemnly approaches the car. 'Sir, I'm sorry to tell you your wife fell out a mile back', he says. 'Oh, thank goodness', the man replies. 'I thought I was going deaf.'"
+          },
+          {
+            "answer": "Two men walking their dogs pass each other in a graveyard. The first man says to the second, 'Morning.' 'No', says the second man. 'Just walking the dog.'"
+          },
+          {
+            "answer": "A brain went into a bar and said, 'Can I have a pint of lager please, mate?' 'No way', said the barman. 'You're already out of your head.'"
+          },
+          {
+            "answer": "A man walks into a surgery. 'Doctor!' he cries. 'I think I'm shrinking!' 'I'm sorry sir, there are no appointments at the moment', says the physician. 'You'll just have to be a little patient.'"
+          },
+          {
+            "answer": "A grizzly bear walks into a pub and says, 'Can I have a pint of lager..............................................................................................................................and a packet of crisps please.' To which the barman replies, 'Why the big paws?'"
+          },
+          {
+            "answer": "What do you call cheese that isn't yours?  Nacho cheese."
+          },
+          {
+            "answer": "A man is horribly run over by a mobile library. The van screeches to a halt, the man still screaming in agony with his limbs torn apart. The driver's door opens, a woman steps out, leans down and whispers, 'Ssshhhhh...'"
+          },
+          {
+            "answer": "A woman goes into a US sporting goods store to buy a rifle. 'It's for my husband', she tells the clerk. 'Did he tell you what gauge to get?' asks the clerk. Are you kidding?' she says. 'He doesn't even know that I'm going to shoot him!'"
+          },
+          {
+            "answer": "A couple are dining in a restaurant when the man suddenly slides under the table. A waitress, noticing that the woman is glancing nonchalantly around the room, wanders over to check that there's no funny business going on. 'Excuse me, madam', she smarms, 'but I think your husband has just slid under the table.' 'No he hasn't', the woman replies. 'As a matter of fact, he's just walked in.'"
+          },
+          {
+            "answer": "An old man takes his two grandchildren to see the new Scooby-Doo film. When he returns home, his wife asks if he enjoyed himself. 'Well', he starts, 'if it wasn't for those pesky kids...!'"
+          },
+          {
+            "answer": "The Olympic committee has just announced that Origami is to be introduced in the next Olympic Games. Unfortunately it will only be available on paper view."
+          },
+          {
+            "answer": "Late one evening, a man is watching television when his phone rings. 'Hello?' he answers. 'Is that 77777?' sounds a desperate voice on other end of the phone. 'Er, yes it is', replies the man puzzled. 'Thank goodness!' cries the caller relieved. 'Can you ring 999 for me? I've got my finger stuck in the number seven.'"
+          },
+          {
+            "answer": "A man strolls into his local grocer's and says, 'Three pounds of potatoes, please.' 'No, no, no', replies the owner, shaking his head, 'it's kilos nowadays, mate...' 'Oh', apologises the man, 'three pounds of kilos, please.'"
+          },
+          {
+            "answer": "God is talking to one of his angels. He says, 'Boy, I just created a 24-hour period of alternating light and darkness on Earth.' 'What are you going to do now?' asks the angel. 'Call it a day', says God."
+          },
+          {
+            "answer": "Two tramps walk past a church and start to read the gravestones. The first tramp says, 'Good grief - this bloke was 182!' 'Oh yeah?' says the other.'What was his name?' 'Miles from London.'"
+          },
+          {
+            "answer": "A bloke walks into work one day and says to a colleague, 'Do you like my new shirt - it's made out of the finest silk and got loads of cactuses over it.' 'Cacti', says the co-worker. 'Forget my tie', says the bloke. 'Look at my shirt!'"
+          },
+          {
+            "answer": "1110011010001011111?  010011010101100111011!"
+          },
+          {
+            "answer": "What did the plumber say when he wanted to divorce his wife? Sorry, but it's over, Flo!"
+          },
+          {
+            "answer": "Two crisps were walking down a road when a taxi pulled up alongside them and said 'Do you want a lift? One of the crisps replied, 'No thanks, we're Walkers!'"
+          },
+          {
+            "answer": "Man: (to friend) I'm taking my wife on an African Safari. Friend: Wow! What would you do if a vicious lion attacked your wife? Man: Nothing. Friend: Nothing? You wouldn't do anything? Man: Too right. I'd let the stupid lion fend for himself!"
+          },
+          {
+            "answer": "A wife was having a go at her husband. 'Look at Mr Barnes across the road', she moaned. 'Every morning when he goes to work, he kisses his wife goodbye. Why don't you do that?' 'Because I haven't been introduced to her yet', replied her old man."
+          },
+          {
+            "answer": "'Where are you going on holiday?' John asked Trevor. 'We're off to Thailand this year', Trevor replied. 'Oh; aren't you worried that the very hot weather might disagree with your wife?' asked John. 'It wouldn't dare', said Trevor."
+          },
+          {
+            "answer": "Two women were standing at a funeral. 'I blame myself for his death', said the wife. 'Why?' said her friend. 'Because I shot him', said the wife."
+          },
+          {
+            "answer": "A woman goes into a clothes shop, 'Can I try that dress on in the window please?' she asks. 'I'm sorry madam', replies the shop assistant, 'but you'll have to use the changing-rooms like everyone else.'"
+          },
+          {
+            "answer": "Van Gogh goes into a pub and his mate asks him if he wants a drink. 'No thanks', said Vincent, 'I've got one ear.'"
+          },
+          {
+            "answer": "A pony walks into a pub. The publican says, 'What's the matter with you?' 'Oh it's nothing', says the pony. 'I'm just a little horse!'"
+          },
+          {
+            "answer": "A white horse walks into a bar, pulls up a stool, and orders a pint. The landlord pours him a tall frothy mug and say, 'You know, we have a drink named after you.' To which the white horse replies, 'What, Eric?'"
+          },
+          {
+            "answer": "Two drunk men sat in a pub. One says to the other, 'Does your watch tell the time?' 'The other replies, 'No, mate. You have to look at it.'"
+          },
+          {
+            "answer": "A man goes into a pub with a newt sitting on his shoulder. 'That's a nice newt', says the landlord, 'What's he called?' 'Tiny', replies the man. 'Why's that?' asks the landlord. 'Because he's my newt', says the man."
+          },
+          {
+            "answer": "Doctor: I have some bad news and some very bad news. Patient: Well, you might as well give me the bad news first. Doctor: The lab called with your test results. They said you have 24 hours to live. Patient: 24 HOURS! That's terrible!! WHAT could be WORSE? What's the very bad news? Doctor: I've been trying to reach you since yesterday."
+          },
+          {
+            "answer": "Two men are chatting in a pub one day. 'How did you get those scars on your nose?' said one. 'From glasses', said the other. 'Well why don't you try contact lenses?' asked the first. 'Because they don't hold as much beer', said the second."
+          },
+          {
+            "answer": "A man went to the doctor, 'Look doc', he said, 'I can't stop my hands from shaking.' 'Do you drink much?' asked the doctor. 'No', replied the man, 'I spill most of it.'"
+          },
+          {
+            "answer": "Man goes to the doctor, 'Doctor, doctor. I keep seeing fish everywhere.' 'Have you seen an optician?' asks the doctor. 'Look I told you,' snapped the patient, 'It's fish that I see.'"
+          },
+          {
+            "answer": "After a car crash one of the drivers was lying injured on the pavement. 'Don't worry', said a policeman who's first on the scene,' a Red Cross nurse is coming.' 'Oh no', moaned the victim, 'Couldn't I have a blonde, cheerful one instead?'"
+          },
+          {
+            "answer": "A policeman walked over to a parked car and asked the driver if the car was licensed. 'Of course it is', said the driver. 'Great, I'll have a beer then', said the policeman."
+          },
+          {
+            "answer": "A policeman stops a woman and asks for her licence. 'Madam', he says, 'It says here that you should be wearing glasses.' 'Well', replies the woman, 'I have contacts.' 'Listen, love', says the copper, 'I don't care who you know; You're nicked!'"
+          },
+          {
+            "answer": "A policeman stopped a motorist in the centre of town one evening. 'Would you mind blowing into this bag, sir?' asked the policeman. 'Why?' asked the driver. 'Because my chips are too hot', replied the policeman."
+          },
+          {
+            "answer": "Whizzing round a sharp bend on a country road a motorist ran over a large dog. A distraught farmer's wife ran over to the dead animal. 'I'm so very sorry', said the driver, 'I'll replace him, of course.' 'Well, I don't know', said the farmer's wife, 'Are you any good at catching rats?'"
+          },
+          {
+            "answer": "Waiter, this coffee tastes like dirt! Yes sir, that's because it was ground this morning."
+          },
+          {
+            "answer": "Waiter, what is this stuff? That's bean salad sir. I know what it's been, but what is it now?"
+          },
+          {
+            "answer": "Waiter: And how did you find your steak sir? Customer: I just flipped a chip over, and there it was!"
+          },
+          {
+            "answer": "A guy goes into a pet shop and asks for a wasp. The owner tells him they don't sell wasps, to which the man says, 'Well you've got one in the window.'"
+          },
+          {
+            "answer": "A man goes into a fish shop and says, 'I'd like a piece of cod, please.' Fishmonger says, 'It won't be long sir.' 'Well, it had better be fat then', replies the man."
+          },
+          {
+            "answer": "Man: Doctor, I've just swallowed a pillow. Doctor: How do you feel? Man: A little down in the mouth."
+          },
+          {
+            "answer": "Two goldfish are in a tank. One turns to the other and says, 'Do you know how to drive this thing?'"
+          },
+          {
+            "answer": "A tortoise goes to the police station to report being mugged by three snails. 'What happened?' says the policeman. 'I don't know', says the tortoise. 'It was all so quick.'"
+          },
+          {
+            "answer": "Little girl: Grandpa, can you make a sound like a frog? Grandpa: I suppose so sweetheart. Why do you want me to make a sound like a frog?' Little girl: Because Mum said that when you croak, we're going to Disneyland."
+          },
+          {
+            "answer": "'Is your mother home?' the salesman asked a small boy sitting on the front step of a house. 'Yeah, she's home', the boy said, moving over to let him past. The salesman rang the doorbell, got no response, knocked once, then again. Still no-one came to the door. Turning to the boy, the salesman said, 'I thought you said your mother was home.' The kid replied, 'She is, but I don't live here.'"
+          },
+          {
+            "answer": "Mother: Why are you home from school so early? Son: I was the only one in the class who could answer a question. Mother: Oh, really? What was the question? Son: Who threw the rubber at the headmaster?"
+          },
+          {
+            "answer": "A man's credit card was stolen but he decided not to report it because the thief was spending less than his wife did."
+          },
+          {
+            "answer": "A newly-wed couple had recently opened a joint bank account. 'Darling', said the man. 'The bank has returned that cheque you wrote last week.' 'Great', said the woman. 'What shall I spend it on next?'"
+          },
+          {
+            "answer": "A man goes into a fish and chip shop and orders fish and chips twice. The shop owner says, 'I heard you the first time.'"
+          },
+          {
+            "answer": "A tramp approached a well-dressed man. 'Ten pence for a cup of tea, Guv?' He asked. The man gave him the money and after for five minutes said, 'So where's my cup of tea then?'"
+          },
+          {
+            "answer": "A neutron walks into a pub. 'I'd like a beer', he says. The landlord promptly serves him a beer. 'How much will that be?' asks the neutron. 'For you?' replies the landlord, 'No charge.'"
+          },
+          {
+            "answer": "A woman goes to the doctor and says, 'Doctor, my husband limps because his left leg is an inch shorter than his right leg. What would you do in his case?' 'Probably limp, too', says the doc."
+          },
+          {
+            "answer": "Three monks are meditating in the Himalayas. One year passes in silence, and one of them says to the other, 'Pretty cold up here isn't it?' Another year passes and the second monk says, 'You know, you are quite right.' Another year passes and the third monk says, 'Hey, I'm going to leave unless you two stop jabbering!'"
+          },
+          {
+            "answer": "A murderer, sitting in the electric chair, was about to be executed. 'Have you any last requests?' asked the prison guard. 'Yes', replied the murderer. 'Will you hold my hand?'"
+          },
+          {
+            "answer": "A highly excited man rang up for an ambulance. 'Quickly, come quickly', he shouted, 'My wife's about to have a baby.' 'Is this her first baby?' asked the operator. 'No, you fool', came the reply, 'It's her husband.'"
+          },
+          {
+            "answer": "A passer-by spots a fisherman by a river. 'Is this a good river for fish?' he asks. 'Yes', replies the fisherman, 'It must be. I can't get any of them to come out.'"
+          },
+          {
+            "answer": "A man went to visit a friend and was amazed to find him playing chess with his dog. He watched the game in astonishment for a while. 'I can hardly believe my eyes!' he exclaimed. 'That's the smartest dog I've ever seen.' His friend shook his head. 'Nah, he's not that bright. I beat him three games in five.'"
+          },
+          {
+            "answer": "A termite walks into a pub and says, 'Is the bar tender here?'"
+          },
+          {
+            "answer": "A skeleton walks into a pub one night and sits down on a stool. The landlord asks, 'What can I get you?' The skeleton says, 'I'll have a beer, thanks' The landlord passes him a beer and asks 'Anything else?' The skeleton nods. 'Yeah...a mop...'"
+          },
+          {
+            "answer": "A snake slithers into a pub and up to the bar. The landlord says, 'I'm sorry, but I can't serve you.' 'What? Why not?' asks the snake. 'Because', says the landlord, 'You can't hold your drink.'"
+          },
+          {
+            "answer": "Descartes walks into a pub. 'Would you like a beer sir?' asks the landlord politely. Descartes replies, 'I think not' and ping! he vanishes."
+          },
+          {
+            "answer": "A cowboy walked into a bar, dressed entirely in paper. It wasn't long before he was arrested for rustling."
+          },
+          {
+            "answer": "A fish staggers into a bar. 'What can I get you?' asks the landlord. The fish croaks 'Water...'"
+          },
+          {
+            "answer": "Two vampires walked into a bar and called for the landlord. 'I'll have a glass of blood', said one. 'I'll have a glass of plasma', said the other. 'Okay', replied the landlord, 'That'll be one blood and one blood lite.'"
+          },
+          {
+            "answer": "How many existentialists does it take to change a light bulb?  Two. One to screw it in, and one to observe how the light bulb itself symbolises a single incandescent beacon of subjective reality in a netherworld of endless absurdity, reaching towards the ultimate horror of a maudlin cosmos of bleak, hostile nothingness."
+          },
+          {
+            "answer": "A team of scientists were nominated for the Nobel Prize. They had used dental equipment to discover and measure the smallest particles yet known to man. They became known as 'The Graders of the Flossed Quark...'"
+          },
+          {
+            "answer": "A truck carrying copies of Roget's Thesaurus overturned on the highway. The local newspaper reported that onlookers were 'stunned, overwhelmed, astonished, bewildered and dumbfounded.'"
+          },
+          {
+            "answer": "'My wife is really immature. It's pathetic. Every time I take a bath, she comes in and sinks all my little boats.'"
+          },
+          {
+            "answer": "'How much will it cost to have the tooth extracted?' asked the patient. '50 pounds', replied the dentist. '50 pounds for a few moments' work?!' asked the patient. 'The dentist smiled, and replied, 'Well, if you want better value for money, I can extract it very, very slowly...'"
+          },
+          {
+            "answer": "A doctor thoroughly examined his patient and said, 'Look I really can't find any reason for this mysterious affliction. It's probably due to drinking.' The patient sighed and snapped, 'In that case, I'll come back when you're damn well sober!'"
+          },
+          {
+            "answer": "Doctor: Tell me nurse, how is that boy doing; the one who ate all those 5p pieces? Nurse: Still no change doctor."
+          },
+          {
+            "answer": "Doctor: Did you take the patient's temperature nurse? Nurse: No doctor. Is it missing?"
+          },
+          {
+            "answer": "A depressed man turned to his friend in the pub and said, 'I woke up this morning and felt so bad that I tried to kill myself by taking 50 aspirin.' 'Oh man, that's really bad', said his friend, 'What happened?' The first man sighed and said, 'After the first two, I felt better.'"
+          },
+          {
+            "answer": "A famous blues musician died. His tombstone bore the inscription, 'Didn't wake up this morning...'"
+          },
+          {
+            "answer": "A businessman was interviewing a nervous young woman for a position in his company. He wanted to find out something about her personality, so he asked, 'If you could have a conversation with someone living or dead, who would it be?' The girl thought about the question: 'The living one', she replied."
+          },
+          {
+            "answer": "Manager to interviewee: For this job we need someone who is responsible. Interviewee to Manager: I'm your man then - in my last job, whenever anything went wrong, I was responsible."
+          },
+          {
+            "answer": "A businessman turned to a colleague and asked, 'So, how many people work at your office?' His friend shrugged and replied, 'Oh about half of them.'"
+          },
+          {
+            "answer": "'How long have I been working at that office? As a matter of fact, I've been working there ever since they threatened to sack me.'"
+          },
+          {
+            "answer": "In a courtroom, a mugger was on trial. The victim, asked if she recognised the defendant, said, 'Yes, that's him. I saw him clear as day. I'd remember his face anywhere.' Unable to contain himself, the defendant burst out with, 'She's lying! I was wearing a mask!'"
+          },
+          {
+            "answer": "As Sid sat down to a big plate of chips and gravy down the local pub, a mate of his came over and said, 'Here Sid, me old pal. I thought you were trying to get into shape? And here you are with a high-fat meal and a pint of stout!' Sid looked up and replied, 'I am getting into shape. The shape I've chosen is a sphere.'"
+          },
+          {
+            "answer": "Man in pub: How much do you charge for one single drop of whisky? Landlord: That would be free sir. Man in pub: Excellent. Drip me a glass full."
+          },
+          {
+            "answer": "I once went to a Doctor Who restaurant. For starters I had Dalek bread."
+          },
+          {
+            "answer": "A restaurant nearby had a sign in the window which said 'We serve breakfast at any time', so I ordered French toast in the Renaissance."
+          },
+          {
+            "answer": "Why couldn't the rabbit get a loan?  Because he had burrowed too much already!"
+          },
+          {
+            "answer": "I phoned up the builder's yard yesterday. I said, 'Can I have a skip outside my house?'. The builder said, 'Sure. Do what you want. It's your house.'"
+          },
+          {
+            "answer": "What's the diference between a sock and a camera? A sock takes five toes and a camera takes four toes!"
+          },
+          {
+            "answer": "Woman on phone: I'd like to complain about these incontinence pants I bought from you! Shopkeeper: Certainly madam, where are you ringing from? Woman on phone: From the waist down!"
+          },
+          {
+            "answer": "Knock knock."
+          },
+          {
+            "answer": "Two Oranges in a pub, one says to the other 'Your round.'."
+          },
+          {
+            "answer": "Guy : 'Doc, I've got a cricket ball stuck up my backside.' Doc : 'How's that?' Guy : 'Don't you start...'"
+          },
+          {
+            "answer": "Two cows standing in a field. One turns to the other and says 'Moo!' The other one says 'Damn, I was just about to say that!'."
+          },
+          {
+            "answer": "A vampire bat arrives back at the roost with his face full of blood. All the bats get excited and ask where he got it from. 'Follow me', he says and off they fly over hills, over rivers and into a dark forest. 'See that tree over there', he says.  'WELL I DIDN'T!!'."
+          },
+          {
+            "answer": "A man goes into a bar and orders a pint. After a few minutes he hears a voice that says, 'Nice shoes'. He looks around but the whole bar is empty apart from the barman at the other end of the bar. A few minutes later he hears the voice again. This time it says, 'I like your shirt'. He beckons the barman over and tells him what's been happening to which the barman replies, 'Ah, that would be the nuts sir. They're complimentary'!"
+          },
+          {
+            "answer": "A man was siting in a restaurant waiting for his meal when a big king prawn comes flying across the room and hits him on the back of the head. He turns around and the waiter said, 'That's just for starters'."
+          },
+          {
+            "answer": "Doctor! I have a serious problem, I can never remember what i just said. When did you first notice this problem? What problem?"
+          },
+          {
+            "answer": "Now, most dentist's chairs go up and down, don't they? The one I was in went back and forwards. I thought, 'This is unusual'. Then the dentist said to me, 'Mitsuku, get out of the filing cabinet'."
+          },
+          {
+            "answer": "I was reading this book, 'The History of Glue'. I couldn't put it down."
+          },
+          {
+            "answer": "The other day someone left a piece of plastacine in my bedroom. I didn't know what to make of it."
+          },
+          {
+            "answer": "When I was at school people used to throw gold bars at me. I was the victim of bullion."
+          },
+          {
+            "answer": "I was playing the piano in a bar and this elephant walked in and started crying his eyes out. I said 'Do you recognise the tune?' He said 'No, I recognise the ivory.'"
+          },
+          {
+            "answer": "I went in to a pet shop. I said, 'Can I buy a goldfish?' The guy said, 'Do you want an aquarium?' I said, 'I don't care what star sign it is.'"
+          },
+          {
+            "answer": "My mate Sid was a victim of I.D. theft. Now we just call him S."
+          },
+          {
+            "answer": "David Hasselhoff walks into a bar and says to the barman, 'I want you to call me David Hoff'.  The barman replies 'Sure thing Dave... no hassle'"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {
+    "story.food": {
+      "food": {
+        "intent": "story.food",
+        "entity": "food",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "story.animal": {
+      "animal": {
+        "intent": "story.animal",
+        "entity": "animal",
+        "mandatory": false,
+        "locales": {}
+      },
+      "characteristic": {
+        "intent": "story.animal",
+        "entity": "characteristic",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "story.person": {
+      "person": {
+        "intent": "story.person",
+        "entity": "person",
+        "mandatory": false,
+        "locales": {}
+      },
+      "characteristic": {
+        "intent": "story.person",
+        "entity": "characteristic",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "story.item": {
+      "item": {
+        "intent": "story.item",
+        "entity": "item",
+        "mandatory": false,
+        "locales": {}
+      }
+    }
+  }
+}
